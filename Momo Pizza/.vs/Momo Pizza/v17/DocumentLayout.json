@@ -1,7 +1,11 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0435 WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\Momo Pizza\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__\u0423\u0427\u0401\u0411\u0410_\u041F\u0420\u0415\u0414\u041C\u0415\u0422\u042B_WEB_\u0421\u0418\u0421\u0422\u0415\u041C\u042B_\u041A\u0423\u0420\u0421\u0410\u0427_MOMO_PIZZA_MOMO_PIZZA_APP_DATA_MOMO_PIZZA.MDF/True/SqlTable/dbo.Basket.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +13,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +26,16 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dbo.Basket [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__\u0423\u0427\u0401\u0411\u0410_\u041F\u0420\u0415\u0414\u041C\u0415\u0422\u042B_WEB_\u0421\u0418\u0421\u0422\u0415\u041C\u042B_\u041A\u0423\u0420\u0421\u0410\u0427_MOMO_PIZZA_MOMO_PIZZA_APP_DATA_MOMO_PIZZA.MDF/True/SqlTable/dbo.Basket.sql",
+              "ToolTip": "dbo.Basket [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-03-16T06:49:23.761Z",
+              "EditorCaption": ""
             }
           ]
         }
