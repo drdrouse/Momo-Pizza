@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momo Pizza", "Momo Pizza\Momo Pizza.csproj", "{3878AF44-F19B-479C-9F27-D96DDB10EF8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momo Pizza.Tests", "Momo Pizza.Tests\Momo Pizza.Tests.csproj", "{7293FA70-D669-4C0C-8396-EB89750C8582}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3878AF44-F19B-479C-9F27-D96DDB10EF8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3878AF44-F19B-479C-9F27-D96DDB10EF8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3878AF44-F19B-479C-9F27-D96DDB10EF8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3878AF44-F19B-479C-9F27-D96DDB10EF8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7293FA70-D669-4C0C-8396-EB89750C8582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7293FA70-D669-4C0C-8396-EB89750C8582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7293FA70-D669-4C0C-8396-EB89750C8582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7293FA70-D669-4C0C-8396-EB89750C8582}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D18EFA59-9A41-4B47-90A4-53BCC1BC4B04}
+	EndGlobalSection
+EndGlobal
