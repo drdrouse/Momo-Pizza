@@ -1,0 +1,136 @@
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\appsettings.Development.json
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\appsettings.json
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Momo Pizza.staticwebassets.runtime.json
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Momo Pizza.exe
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Momo Pizza.deps.json
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Momo Pizza.runtimeconfig.json
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Momo Pizza.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Momo Pizza.pdb
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Azure.Core.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Azure.Identity.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\Momo Pizza.csproj.AssemblyReference.cache
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\Momo Pizza.GeneratedMSBuildEditorConfig.editorconfig
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\Momo Pizza.AssemblyInfoInputs.cache
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\Momo Pizza.AssemblyInfo.cs
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\Momo Pizza.csproj.CoreCompileInputs.cache
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\Momo Pizza.MvcApplicationPartsAssemblyInfo.cache
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\Momo Pizza.RazorAssemblyInfo.cache
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\Momo Pizza.RazorAssemblyInfo.cs
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\staticwebassets.build.json
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\staticwebassets.development.json
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\staticwebassets\msbuild.Momo Pizza.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\staticwebassets\msbuild.build.Momo Pizza.props
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Momo Pizza.props
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Momo Pizza.props
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\scopedcss\bundle\Momo Pizza.styles.css
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\scopedcss\projectbundle\Momo Pizza.bundle.scp.css
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\Momo Pizza.csproj.Up2Date
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\Momo Pizza.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\refint\Momo Pizza.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\Momo Pizza.pdb
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\Momo Pizza.genruntimeconfig.cache
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\obj\Debug\net8.0\ref\Momo Pizza.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Humanizer.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\System.CodeDom.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
