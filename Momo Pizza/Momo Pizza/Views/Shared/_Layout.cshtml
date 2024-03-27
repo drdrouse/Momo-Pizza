@@ -2,48 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Momo_Pizza</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Momo_Pizza.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css">
+    <link rel="stylesheet" href="~/css/slider.css">
+    <link rel="stylesheet" href="~/css/footer.css">
+    <script src="~/js/slider.js" defer="defer"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Momo Pizza.com</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Momo_Pizza</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div class="logo">
+            <a href="https://localhost:7002">
+                <img src="~/css/Logo.jpg" width="60px" height="60px" />
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="/products">Menu</a></li>
+                <li><a href="/services">Pizza Maker</a></li>
+                <li><a href="/contacts">About</a></li>
+            </ul>
+        </div>
+        <button class="enter">
+            <a href="/_Layout.cshtml">Entry</a>
+        </button>
+        <div class="basket">
+            <a href="/products">
+                <img src="~/css/Basket.png" width="48рх" height="48px" />
+            </a>
+        </div>
     </header>
+    <section>           
+        <div class="carousel-container">
+            <img src="" alt='bg image' class='bg-image' />
+            <div class="carousel">
+                <img src="~/css/For Slader/Cyberpunk.png" alt="Image 1" class='carousel-image'  width="500px" height="500px">
+                <img src="~/css/For Slader/Diablo.jpg" alt="Image 2" class='carousel-image' width="500px" height="500px">
+                <img src="~/css/For Slader/GTA.jpg" alt="Image 3" class='carousel-image' width="500px" height="500px">
+                <img src="~/css/For Slader/Man.jpg" alt="Image 4" class='carousel-image' width="500px" height="500px">
+                <img src="~/css/For Slader/Mordor.jpg" alt="Image 4" class='carousel-image' width="500px" height="500px">
+                <img src="~/css/For Slader/Re Village.jpg" alt="Image 4" class='carousel-image' width="500px" height="500px">
+                <img src="~/css/For Slader/STALKER.png" alt="Image 4" class='carousel-image' width="500px" height="500px">
+                <img src="~/css/For Slader/Vegetarian.jpg" alt="Image 4" class='carousel-image' width="500px" height="500px">
+            </div>
+            <button class="arrow-button left-arrow"><span>&#8249;</span></button>
+            <button class="arrow-button right-arrow"><span>&#8250;</span></button>
+        </div>
+    </section>
+    <footer>
+        <ul class="social">
+            <li><a href="#"><ion-icon name="logo-VK"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-WhatsApp"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-Instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-inkedin"></ion-icon></a></li>
+        </ul>
+        <ul class="menu_footer">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>©2024 Momo Pizza Company | All Rights Reserved</p>
+        <p>Drykov Daniil, Ermakov Vladislav, Shtepa Michail</p>
+    </footer>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Momo_Pizza - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    </div> @*Не трогать иначе не работает*@
 </body>
 </html>
