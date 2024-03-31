@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="~/css/site.css">
-    <link rel="stylesheet" href="~/css/slider.css">
+    <link rel="stylesheet" href="~/css/site.css">    
     <link rel="stylesheet" href="~/css/footer.css">
-    <script src="~/js/slider.js" defer="defer"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Momo Pizza.com</title>
@@ -13,19 +11,19 @@
 <body>
     <header>
         <div class="logo">
-            <a href="">
+            <a href="~/Home/Index">
                 <img src="~/css/Logo.jpg" width="60px" height="60px" />
             </a>
         </div>
         <div class="menu">
             <ul>
-                <li><a href="/products">Menu</a></li>
-                <li><a href="/services">Pizza Maker</a></li>
-                <li><a href="/contacts">About</a></li>
+                <li><a href="~/Menu/Index">Меню</a></li>
+                <li><a href="/services">"Создатель"</a></li>
+                <li><a href="/contacts">О нас</a></li>
             </ul>
         </div>
         <button class="enter">
-            <a href="/_Layout.cshtml">Entry</a>
+            <a href="/_Layout.cshtml">Войти</a>
         </button>
         <div class="basket">
             <a href="/products">
@@ -33,23 +31,11 @@
             </a>
         </div>
     </header>
-    <section>           
-        <div class="carousel-container">
-            <img src="" alt='bg image' class='bg-image' />
-            <div class="carousel">
-                <img src="~/css/For Slader/Cyberpunk.png" alt="Image 1" class='carousel-image'  width="500px" height="500px">
-                <img src="~/css/For Slader/Diablo.jpg" alt="Image 2" class='carousel-image' width="500px" height="500px">
-                <img src="~/css/For Slader/GTA.jpg" alt="Image 3" class='carousel-image' width="500px" height="500px">
-                <img src="~/css/For Slader/Man.jpg" alt="Image 4" class='carousel-image' width="500px" height="500px">
-                <img src="~/css/For Slader/Mordor.jpg" alt="Image 4" class='carousel-image' width="500px" height="500px">
-                <img src="~/css/For Slader/Re Village.jpg" alt="Image 4" class='carousel-image' width="500px" height="500px">
-                <img src="~/css/For Slader/STALKER.png" alt="Image 4" class='carousel-image' width="500px" height="500px">
-                <img src="~/css/For Slader/Vegetarian.jpg" alt="Image 4" class='carousel-image' width="500px" height="500px">
-            </div>
-            <button class="arrow-button left-arrow"><span>&#8249;</span></button>
-            <button class="arrow-button right-arrow"><span>&#8250;</span></button>
-        </div>
-    </section>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div> @*Не трогать иначе не работает*@
     <footer>
         <ul class="social">
             <li><a href="#"><ion-icon name="logo-VK"></ion-icon></a></li>
@@ -58,19 +44,15 @@
             <li><a href="#"><ion-icon name="logo-inkedin"></ion-icon></a></li>
         </ul>
         <ul class="menu_footer">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Сервис</a></li>
+            <li><a href="#">Команда</a></li>
+            <li><a href="#">Контакты</a></li>
         </ul>
-        <p>©2024 Momo Pizza Company | All Rights Reserved</p>
-        <p>Drykov Daniil, Ermakov Vladislav, Shtepa Michail</p>
+        <p>©2024 Momo Pizza Company | Все права защищены</p>
+        <p>Дрыков Даниил, Ермаков Владислав, Штепа Михаил</p>
     </footer>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div> @*Не трогать иначе не работает*@
+
 </body>
 </html>

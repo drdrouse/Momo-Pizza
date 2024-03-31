@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<head>
+     <link rel="stylesheet" href="~/css/Menu.css"> 
+</head>
+<body>
+    <div class="cards">
+        @{
+            using (ApplicationContext db = new ApplicationContext())
+            {
+
+                foreach (Pizza pizza in db.Pizzas)
+                {
+                        <!-- Карточка товара -->
+                    <div class="card" href="#">
+                            <!-- Верхняя часть -->
+                        <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <div class="card__image">
+                                <img src="~/css/Photo/@pizza.Photo" />
+                            </div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                            <!-- Ссылка-название товара -->
+                            <div class="card__title">
+                                @pizza.Name
+                            </div>
+                            <div class="card__space">
+                                <!-- Описание товара -->
+                                <div class="card__description">
+                                    @pizza.Description
+                                </div>
+                                <footer class="card__price__and__add">
+                                    <!-- Цены на товара-->
+                                    <div class="card__prices">
+                                        <div class="card__price card__price--common">
+                                            @pizza.Price ₽
+                                            <button class="card__add">В корзину</button>
+                                        </div>                                                                                  
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        }
+    </div>
+</body>
+
+
