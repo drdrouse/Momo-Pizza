@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/shopping_cart.css">
+</head>
+<body>
+    <div class="name_cart"> 
+        Корзина
+    </div>
+    <div class="container">
+        @{
+            using (ApplicationContext db_basket = new ApplicationContext())
+            {
+
+                foreach (Order ord in db_basket.Orders.Where(id => id.Id_Basket == 1))
+                {
+                    Pizza pizza = db_basket.Pizzas.Where(id => id.PizzaId == ord.Id_Pizza).FirstOrDefault();
+                    Sauce sauce = db_basket.Sauces.Where(id => id.SauceId == pizza.ID_Sauce).FirstOrDefault();
+                    Dough dough = db_basket.Doughs.Where(id => id.DoughId == pizza.ID_Dough).FirstOrDefault();
+                    <article class="product">
+                        <header>
+                            <a class="remove">
+                                <img src="~/css/Photo/@pizza.Photo" alt=""> 
+
+                                <h3>Убрать пиццу</h3>
+                            </a>
+                        </header>
+
+                        <div class="content">
+                            <h1>@pizza.Name</h1>                    
+                            <div class="card_descriprion">
+                                <div class="data__description">
+                                    <div>ПИЦЦА</div>
+                                    <div>Диаметр: @pizza.Diameter см</div>
+                                </div>
+                                <div class="data__description">
+                                    <div>СОУС</div>
+                                    <div>Название: @sauce.Name_Sauce</div>
+                                    <div>Тип соуса: @sauce.Type_Sauce</div>
+                                    <div>Калорийность: @sauce.Calories Ккал</div>
+                                </div>
+                                <div class="data__description">
+                                    <div>ТЕСТО</div>
+                                    <div>Название: @dough.Name</div>
+                                    <div>Тип муки: @dough.Type_flour </div>
+                                    <div>Калорийность: @dough.Calories Ккал</div>
+                                </div>                         
+                            </div>
+                        </div>
+
+                        <footer class="content">
+                            <span class="qt-minus">-</span>
+                            <span class="qt">@ord.Count</span>
+                            <span class="qt-plus">+</span>
+
+                            <h2 class="full-price">
+                                @(pizza.Price * ord.Count)₽
+                            </h2>
+
+                            <h2 class="price">
+                                @pizza.Price₽
+                            </h2>
+                        </footer>
+                    </article>
+                }
+            }
+        }
+    </div>
+</body>

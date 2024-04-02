@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\Basket.png"
     },
     {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Dumpster.png",
+      "PackagePath": "staticwebassets\\css\\Dumpster.png"
+    },
+    {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\For Slader\\Cyberpunk.png",
       "PackagePath": "staticwebassets\\css\\For Slader\\Cyberpunk.png"
     },
@@ -49,6 +53,26 @@
       "PackagePath": "staticwebassets\\css\\Menu.css"
     },
     {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Photo\\Cheasy.jpg",
+      "PackagePath": "staticwebassets\\css\\Photo\\Cheasy.jpg"
+    },
+    {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Photo\\Chiken.jpg",
+      "PackagePath": "staticwebassets\\css\\Photo\\Chiken.jpg"
+    },
+    {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Photo\\Hawai.jpg",
+      "PackagePath": "staticwebassets\\css\\Photo\\Hawai.jpg"
+    },
+    {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Photo\\Meat.jpg",
+      "PackagePath": "staticwebassets\\css\\Photo\\Meat.jpg"
+    },
+    {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Photo\\Mortadella.jpg",
+      "PackagePath": "staticwebassets\\css\\Photo\\Mortadella.jpg"
+    },
+    {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Photo\\No_image.jpg",
       "PackagePath": "staticwebassets\\css\\Photo\\No_image.jpg"
     },
@@ -59,6 +83,10 @@
     {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\footer.css",
       "PackagePath": "staticwebassets\\css\\footer.css"
+    },
+    {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\shopping_cart.css",
+      "PackagePath": "staticwebassets\\css\\shopping_cart.css"
     },
     {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\site.css",

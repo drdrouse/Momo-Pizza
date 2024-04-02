@@ -15,7 +15,7 @@ namespace Momo_Pizza.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Momo_Pizza;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Momo_Pizza;Trusted_Connection=True;MultipleActiveResultSets=true;");
         }
 
 

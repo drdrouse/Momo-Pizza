@@ -9,10 +9,9 @@
 <body>
     <div class="cards">
         @{
-            using (ApplicationContext db = new ApplicationContext())
+            using (ApplicationContext db_menu = new ApplicationContext())
             {
-
-                foreach (Pizza pizza in db.Pizzas)
+                foreach (Pizza pizza in db_menu.Pizzas)
                 {
                         <!-- Карточка товара -->
                     <div class="card" href="#">
@@ -38,7 +37,7 @@
                                     <!-- Цены на товара-->
                                     <div class="card__prices">
                                         <div class="card__price card__price--common">
-                                            @pizza.Price ₽
+                                            @pizza.Price₽
                                             <button class="card__add">В корзину</button>
                                         </div>                                                                                  
                                     </div>
