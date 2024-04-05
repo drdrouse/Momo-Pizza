@@ -10,8 +10,6 @@ const images = document.querySelectorAll(".carousel-image");
 
 const totalImages = Object.keys(images).length;
 
-// Use this in your project, if you're doing it locally
-// const imageWidth = images[1].getBoundingClientRect().x;
 
 const imageWidth = 520;
 console.log("getbounding1", images[1].getBoundingClientRect());
