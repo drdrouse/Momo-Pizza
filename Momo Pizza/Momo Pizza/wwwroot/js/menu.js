@@ -12,7 +12,7 @@
             },
             success: function (r) {
                 if (r) {
-                    
+                    alert("Пицца успешно добавлена")
                 } else {
                     alert("Пицца уже в корзине");
                 }
