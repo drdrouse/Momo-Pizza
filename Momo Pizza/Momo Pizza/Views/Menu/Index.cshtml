@@ -4,7 +4,9 @@
 }
 
 <head>
-     <link rel="stylesheet" href="~/css/Menu.css"> 
+     <link rel="stylesheet" href="~/css/Menu.css">
+     <script src="~/js/menu.js" defer="defer"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
     <div class="cards">
@@ -20,6 +22,7 @@
                             <!-- Изображение-ссылка товара -->
                             <div class="card__image">
                                 <img src="~/css/Photo/@pizza.Photo" />
+
                             </div>
                         </div>
                         <!-- Нижняя часть -->
@@ -38,7 +41,7 @@
                                     <div class="card__prices">
                                         <div class="card__price card__price--common">
                                             @pizza.Price₽
-                                            <button class="card__add">В корзину</button>
+                                            <button id="@pizza.PizzaId" class="card__add">В корзину</button>
                                         </div>                                                                                  
                                     </div>
                                 </footer>
