@@ -44,7 +44,7 @@
         if (input.dataset.required == "RPass") {
             if (document.getElementById('p1').value != document.getElementById('p2').value) {
                 removeError(input)
-                createError(input, 'Пароли не совпали!')
+                createError(input, 'Несовпадение паролей')
                 result = false
             }
             else {
@@ -55,7 +55,7 @@
         if (input.dataset.required == "Email") {
             if (/^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(input.value) == false) {
                 removeError(input)
-                createError(input, 'Нужен следующий вид: user@example.com; Где user - ваш логин, @ - обязательный символ, example.com - ваш домен!')
+                createError(input, 'Неверно введён email')
                 result = false
             }
         }
@@ -68,6 +68,6 @@
 document.getElementById("RegForm").addEventListener("submit", function (event) {
     event.preventDefault()
     if (validation(this) == true) {
-        alert('Форма проверена успешна!')
+        alert('Вы зарегестрировались')
     }
 })
