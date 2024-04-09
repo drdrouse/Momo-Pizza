@@ -27,9 +27,9 @@
             }
         }
         if (input.dataset.required == "Pass") {
-            if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})^.+$/.test(input.value) == false) {
+            if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})^.+$/.test(input.value) == false) {
                 removeError(input)
-                createError(input, 'Пароль должен содержать: буквы (a-z, A-Z), спец. символ [!@#$ %^&*], цифра [0-9], к-во символов более 8')
+                createError(input, 'Пароль должен содержать: буквы (a-z, A-Z), цифры [0-9], к-во символов более 8')
 
                 result = false
             }
@@ -62,5 +62,6 @@ document.getElementById("RegForm").addEventListener("submit", function (event) {
     event.preventDefault()
     if (validation(this) == true) {
         alert('Вы зарегестрировались')
+        window.history.go(-1)
     }
 })
