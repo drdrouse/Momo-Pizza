@@ -19,24 +19,17 @@
     for (const input of allInputs) {
         removeError(input)
 
-        if (input.dataset.required == "Namee") {
-            if (/^[А-ЯЁа-яё]+(-[А-ЯЁа-яё]+)?$/.test(input.value) == false) {
-                removeError(input)
-                createError(input, 'Нужен следующий вид: Влад, У-иглы. Буквы русского алфавита, возможно использовать знак - в имени!')
-                result = false
-            }
-        }
         if (input.dataset.required == "Tele") {
             if (/^\+?[0-9]{10,15}$/.test(input.value) == false) {
                 removeError(input)
-                createError(input, 'Нужен следующий вид: +79123456789, знак + не обязателен. Последовательность цифр без лишних символов!')
+                createError(input, 'Неверно введён телефон')
                 result = false
             }
         }
         if (input.dataset.required == "Pass") {
             if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})^.+$/.test(input.value) == false) {
                 removeError(input)
-                createError(input, 'Особенности пароля: мин. 1 строчная (a-z) и прописная(A-Z), мин. 1 спец. символ [!@#$ %^&*], мин. 1 цифра, к-во символов 8 и более!')
+                createError(input, 'Пароль должен содержать: буквы (a-z, A-Z), спец. символ [!@#$ %^&*], цифра [0-9], к-во символов более 8')
 
                 result = false
             }

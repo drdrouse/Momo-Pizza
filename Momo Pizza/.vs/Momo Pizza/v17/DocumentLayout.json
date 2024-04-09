@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "Momo Pizza\\wwwroot\\js\\Reg.js",
               "ToolTip": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Reg.js",
               "RelativeToolTip": "Momo Pizza\\wwwroot\\js\\Reg.js",
-              "ViewState": "AQIAACUAAAAAAAAAAAAQwC4AAAA4AAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwB8AAACLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-04-09T00:53:02.446Z",
               "EditorCaption": ""
@@ -75,7 +75,8 @@
               "RelativeToolTip": "Momo Pizza\\Views\\Autorization\\Index.cshtml",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T00:44:01.766Z"
+              "WhenOpened": "2024-04-09T00:44:01.766Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -85,9 +86,10 @@
               "RelativeDocumentMoniker": "Momo Pizza\\Views\\Registration\\Index.cshtml",
               "ToolTip": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\Views\\Registration\\Index.cshtml",
               "RelativeToolTip": "Momo Pizza\\Views\\Registration\\Index.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAB2AAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAABqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T00:42:09.996Z"
+              "WhenOpened": "2024-04-09T00:42:09.996Z",
+              "EditorCaption": ""
             }
           ]
         }
