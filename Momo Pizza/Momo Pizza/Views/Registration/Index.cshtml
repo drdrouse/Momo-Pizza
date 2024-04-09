@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Регистрация</title>
+        <link rel="stylesheet" href="~/css/RegAuto.css">
+        <link rel="stylesheet" href="~/css/Error.css">
+        <script defer src="~/js/Reg.js"></script>
+    </head>
+    <body class="RegAuto">
+        <div class="container">
+            <h1 class="RegAuto">Регистрация</h1>
+            <form action="" method="post" id="RegForm">
+                <div class="input-box">
+                    <input data-required="Email" class="RegAuto" type="text" name="email" placeholder="E-mail">
+                </div>
+                <div class="input-box">
+                    <input data-required="Namee" class="RegAuto" type="text" name="name" placeholder="Никнейм">
+                </div>
+                <div class="input-box">
+                    <input data-required="Tele" class="RegAuto" type="tel" name="telephone" placeholder="Телефон">
+                </div>
+                <div class="input-box">
+                    <input data-required="Pass" class="RegAuto" type="password" name="password" placeholder="Пароль" id="p1">
+                </div>
+                <div class="input-box">
+                    <input data-required="RPass" class="RegAuto" type="password" name="confirmPassword" placeholder="Повторение пароля" id="p2">
+                </div>
+                <button class="RegAuto" type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </body>
+    </html>
+}
+
+
