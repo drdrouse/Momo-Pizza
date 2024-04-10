@@ -1,14 +1,11 @@
-﻿var email = false;
-var name = false;
-var telephone = false;
-var confirmPassword = false;
+﻿
 !(function () {
     const form = document.getElementById("form");
-    const username = document.getElementById("name");
+    const username = document.getElementById("username");
     const email = document.getElementById("email");
+    const telephone = document.getElementById("telephone");
     const password = document.getElementById("password");
-    const password2 = document.getElementById("confirmPassword");
-    const password2 = document.getElementById("confirmPassword");
+    const password2 = document.getElementById("password2");
 
     // Показываем ошибку под полем
     function showError(input, message) {
@@ -24,70 +21,84 @@ var confirmPassword = false;
         formControl.className = "form-control success";
     }
 
-//function validation(form) {
-//    function removeError(input) {
-//        const parent = input.parentNode;
-//        if (parent.classList.contains('error')) {
-//            parent.querySelector('.error-label').remove()
-//            parent.classList.remove('error')
-//        }
-//    }
-//    function createError(input, text) {
-//        const parent = input.parentNode;
-//        const errorLabel = document.createElement('label')
-//        errorLabel.classList.add('error-label')
-//        errorLabel.textContent = text
-//        parent.classList.add('error');
-//        parent.append(errorLabel)
-//    }
-//    let result = true;
-//    const allInputs = form.querySelectorAll('input');
-//    for (const input of allInputs) {
-//        removeError(input)
+    // Проверяем адрес электронной почты на правильность
+    function checkEmail(input) {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (re.test(input.value.trim())) {
+            showSuccess(input);
+            return (true);
+        } else {
+            showError(input, "E-mail имеет неверный формат");
+            return (false);
+        }
+    }
 
-//        if (input.dataset.required == "Tele") {
-//            if (/^\+?[0-9]{10,15}$/.test(input.value) == false) {
-//                removeError(input)
-//                createError(input, 'Неверно введён телефон')
-//                result = false
-//            }
-//        }
-//        if (input.dataset.required == "Pass") {
-//            if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})^.+$/.test(input.value) == false) {
-//                removeError(input)
-//                createError(input, 'Пароль должен содержать: буквы (a-z, A-Z), цифры [0-9], к-во символов более 8')
+    function checkTelephone(input) {
+        const re =            
+        if (re.test(input.value.trim())) {
+            showSuccess(input);
+            return (true);
+        } else {
+            showError(input, "Телефон имеет неверный формат");
+            return (false);
+        }
+    }
+    // Проверка обязательных полей
+    /**
+     *
+     * @param {HTMLElement[]} inputElements
+     * @returns {boolean}
+     */
+    function checkRequired(inputElements) {
+        let isRequired = false;
+        inputElements.forEach(function (input) {
+            if (input.value.trim() === "") {
+                showError(input, `Требуется задать значение для поля ${getFieldName(input)}`);
+                isRequired = false;
+            } else {
+                isRequired = true;
+            }
+        });
 
-//                result = false
-//            }
-//        }
-//        if (input.dataset.required == "RPass") {
-//            if (document.getElementById('p1').value != document.getElementById('p2').value) {
-//                removeError(input)
-//                createError(input, 'Несовпадение паролей')
-//                result = false
-//            }
-//            else {
-//                removeError(input)
-//            }
-//        }
+        return isRequired;
+    }
 
-//        if (input.dataset.required == "Email") {
-//            if (/^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(input.value) == false) {
-//                removeError(input)
-//                createError(input, 'Неверно введён email')
-//                result = false
-//            }
-//        }
+    // Проверяем значение поля на соответствие минимальной и максимальной длине
+    function checkLength(input, min) {
+        if (input.value.length < min) {
+            showError(
+                input,
+                `Поле ${getFieldName(input)} должно быть длиной не менее ${min} символов`
+            );
+        } else {
+            showSuccess(input);
+        }
+    }
 
-//    }
+    // Проверка соответствия паролей
+    function checkPasswordsMatch(input1, input2) {
+        if (input1.value !== input2.value) {
+            showError(input2, "Пароли не совпадают");
+        }
+    }
 
-//    return result
-//}
+    // Получаем имя поля
+    function getFieldName(input) {
+        return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+    }
 
-//document.getElementById("RegForm").addEventListener("submit", function (event) {
-//    event.preventDefault()
-//    if (validation(this) == true) {
-//        alert('Вы зарегестрировались')
-//        window.history.go(-1)
-//    }
-//})
+    // Устанавливаем слушатели событий на форму
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        if (checkRequired([email]) && checkEmail(email)) {
+            alert("OK")
+            //checkLength(password, 8);
+            //checkEmail(email);
+            //checkPasswordsMatch(password, password2);
+        } else {
+            alert("Not Ok")
+        }
+    });
+
+})();
