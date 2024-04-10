@@ -32,7 +32,7 @@
     }
 
     function checkTelephone(input) {
-        const re = /^\+?[0-9]{10,15}$/;           
+        const re = /\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}/;           
         if (re.test(input.value.trim())) {
             showSuccess(input);
             return (true);
@@ -41,16 +41,7 @@
             return (false);
         }
     }
-    function checkName(input) {
-        const re = /^(?!-#)(?!.*-$)[a-zA-Z-]+$/;;
-        if (re.test(input.value.trim())) {
-            showSuccess(input);
-            return (true);
-        } else {
-            showError(input, "Никнейм имеет неверный формат");
-            return (false);
-        }
-    }
+    
     function checkPassword(input) {
         const re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!_-])(?=.{8,})^.+$/;
         if (re.test(input.value.trim())) {
@@ -61,12 +52,6 @@
             return (false);
         }
     }
-    // Проверка обязательных полей
-    /**
-     *
-     * @param {HTMLElement[]} inputElements
-     * @returns {boolean}
-     */
     
     function checkLength(input, min) {
         if (input.value.length < min) {
@@ -106,13 +91,24 @@
             & checkEmail(email)
             & checkPassword(password)
             & checkTelephone(telephone)
-            & checkPasswordsMatch(password, password2)
-            & checkName(username)) {
-            alert("OK")
-        } else {
-            alert("Not OK")
-        }
-
+            & checkPasswordsMatch(password, password2)) {
+            //$.ajax({
+            //    type: "POST",
+            //    url: "/Menu/Add_Order",
+            //    data: {
+            //        "pizzaID": Id,
+            //        "orderID": 1
+            //    },
+            //    success: function (r) {
+            //        if (r) {
+            //            alert("Пицца успешно добавлена")
+            //        } else {
+            //            alert("Пицца уже в корзине");
+            //        }
+            //    }
+            //});
+            
+        }         
     });
 
 })();
