@@ -53,17 +53,17 @@
         }
     }
     
-    function checkLength(input, min) {
-        if (input.value.length < min) {
-            showError(
-                input,
-                `Поле ${getFieldName(input)} должно быть длиной не менее ${min} символов`
-            );
-            return (false);
-        } else {
-            return (true);
-        }
-    }
+    //function checkLength(input, min) {
+    //    if (input.value.length < min) {
+    //        showError(
+    //            input,
+    //            `Поле ${getFieldName(input)} должно быть длиной не менее ${min} символов`
+    //        );
+    //        return (false);
+    //    } else {
+    //        return (true);
+    //    }
+    //}
 
     
     function checkPasswordsMatch(input1, input2) {
@@ -87,26 +87,27 @@
     // Устанавливаем слушатели событий на форму
     form.addEventListener("submit", function (e) {
         e.preventDefault();
-        if (checkLength(password, 8)
-            & checkEmail(email)
+        if (checkEmail(email)
             & checkPassword(password)
             & checkTelephone(telephone)
             & checkPasswordsMatch(password, password2)) {
-            //$.ajax({
-            //    type: "POST",
-            //    url: "/Menu/Add_Order",
-            //    data: {
-            //        "pizzaID": Id,
-            //        "orderID": 1
-            //    },
-            //    success: function (r) {
-            //        if (r) {
-            //            alert("Пицца успешно добавлена")
-            //        } else {
-            //            alert("Пицца уже в корзине");
-            //        }
-            //    }
-            //});
+            $.ajax({
+                type: "POST",
+                url: "/Registration/Add_User",
+                data: {
+                    "phone": telephone.value,
+                    "email": email.value,
+                    "password": password.value,
+                    "username": username.value,
+                },
+                success: function (r) {
+                    if (r) {
+                        window.location.replace("~/Autorization/Index");
+                    } else {
+                        alert("Пользователь не добавлен");
+                    }
+                }
+            });
             
         }         
     });

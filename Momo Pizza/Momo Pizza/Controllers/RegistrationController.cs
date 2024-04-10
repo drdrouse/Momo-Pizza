@@ -11,28 +11,24 @@ namespace Momo_Pizza.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add_User(int pizzaID, int orderID)
+        public IActionResult Add_User(string phone, string email, string password, string username)
         {
             using (ApplicationContext db = new ApplicationContext())
             {
-                Pizza pizza = db.Pizzas.Where(id => id.PizzaId == pizzaID).FirstOrDefault();
-                Basket basket = db.Baskets.Where(id => id.BasketId == orderID).FirstOrDefault();
-                Order yet_Order = db.Orders.Where(id => id.Id_Pizza == pizzaID).FirstOrDefault();
-
-                Order order = new Order
+                User user = new User
                 {
-                    Id_Basket = basket.BasketId,
-                    Basket = basket,
-                    Id_Pizza = pizza.PizzaId,
-                    Pizza = pizza,
-                    Count = 1
+                    Phone = phone,
+                    Email = email,
+                    Password = password,
+                    UserName = username
                 };
-                if ((order != null) && (yet_Order == null))
+                if (user != null)
                 {
-                    db.Orders.Add(order);
+                    db.Users.Add(user);
                     db.SaveChanges();
                     return Json(true);
                 }
+                
 
             }
             return Json(false);
