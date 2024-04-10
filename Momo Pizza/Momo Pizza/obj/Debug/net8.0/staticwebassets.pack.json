@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets\\css\\Dumpster.png"
     },
     {
-      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Error.css",
-      "PackagePath": "staticwebassets\\css\\Error.css"
-    },
-    {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\For Slader\\Cyberpunk.png",
       "PackagePath": "staticwebassets\\css\\For Slader\\Cyberpunk.png"
     },
@@ -85,12 +81,12 @@
       "PackagePath": "staticwebassets\\css\\Photo\\Pepperoni.jpg"
     },
     {
-      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\RegAuto.css",
-      "PackagePath": "staticwebassets\\css\\RegAuto.css"
-    },
-    {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\footer.css",
       "PackagePath": "staticwebassets\\css\\footer.css"
+    },
+    {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\registration.css",
+      "PackagePath": "staticwebassets\\css\\registration.css"
     },
     {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\shopping_cart.css",
@@ -109,16 +105,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Auto.js",
-      "PackagePath": "staticwebassets\\js\\Auto.js"
-    },
-    {
-      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Reg.js",
-      "PackagePath": "staticwebassets\\js\\Reg.js"
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\autorization.js",
+      "PackagePath": "staticwebassets\\js\\autorization.js"
     },
     {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\menu.js",
       "PackagePath": "staticwebassets\\js\\menu.js"
+    },
+    {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\registration.js",
+      "PackagePath": "staticwebassets\\js\\registration.js"
     },
     {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\site.js",

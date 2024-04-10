@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bN2pAsWAx1AjoIgCRiHeE5Ugw83tQ4PMU1HLoP0pkH0=",
+  "Hash": "kBt2IeN03D6pd+0npIRyR1nMRcXtYZmCo72zHb020WE=",
   "Source": "Momo Pizza",
   "BasePath": "_content/Momo Pizza",
   "Mode": "Default",
@@ -91,25 +91,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Dumpster.png"
-    },
-    {
-      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Error.css",
-      "SourceId": "Momo Pizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\",
-      "BasePath": "_content/Momo Pizza",
-      "RelativePath": "css/Error.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Error.css"
     },
     {
       "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\footer.css",
@@ -454,12 +435,12 @@
       "OriginalItemSpec": "wwwroot\\css\\Photo\\Pepperoni.jpg"
     },
     {
-      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\RegAuto.css",
+      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\registration.css",
       "SourceId": "Momo Pizza",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\",
       "BasePath": "_content/Momo Pizza",
-      "RelativePath": "css/RegAuto.css",
+      "RelativePath": "css/registration.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -470,7 +451,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\RegAuto.css"
+      "OriginalItemSpec": "wwwroot\\css\\registration.css"
     },
     {
       "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\shopping_cart.css",
@@ -549,12 +530,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Auto.js",
+      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\autorization.js",
       "SourceId": "Momo Pizza",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\",
       "BasePath": "_content/Momo Pizza",
-      "RelativePath": "js/Auto.js",
+      "RelativePath": "js/autorization.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -565,7 +546,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\Auto.js"
+      "OriginalItemSpec": "wwwroot\\js\\autorization.js"
     },
     {
       "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\menu.js",
@@ -587,12 +568,12 @@
       "OriginalItemSpec": "wwwroot\\js\\menu.js"
     },
     {
-      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Reg.js",
+      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\registration.js",
       "SourceId": "Momo Pizza",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\",
       "BasePath": "_content/Momo Pizza",
-      "RelativePath": "js/Reg.js",
+      "RelativePath": "js/registration.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -603,7 +584,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\Reg.js"
+      "OriginalItemSpec": "wwwroot\\js\\registration.js"
     },
     {
       "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\site.js",

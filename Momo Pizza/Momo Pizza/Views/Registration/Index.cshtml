@@ -9,30 +9,40 @@
     <head>
         <meta charset="UTF-8">
         <title>Регистрация</title>
-        <link rel="stylesheet" href="~/css/RegAuto.css">
-        <link rel="stylesheet" href="~/css/Error.css">
-        <script defer src="~/js/Reg.js"></script>
+        <link rel="stylesheet" href="~/css/registration.css">
+        <script src="~/js/registration.js" defer="defer"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </head>
-    <body class="RegAuto">
+    <body>
         <div class="container">
-            <h1 class="RegAuto">Регистрация</h1>
-            <form action="" method="post" id="RegForm">
-                <div class="input-box">
-                    <input data-required="Email" class="RegAuto" type="text" name="email" placeholder="user@server.com">
+            <form id="form" class="form">
+                <h2>РЕГИСТРАЦИЯ</h2>
+                <div class="form-control">
+                    <label for="username">Никнейм</label>
+                    <input type="text" id="username" placeholder="Введите здесь Ваше имя" />
+                    <small>Сообщение об ошибке</small>
                 </div>
-                <div class="input-box">
-                    <input data-required="Name" class="RegAuto" type="text" name="name" placeholder="Никнейм">
+                <div class="form-control">
+                    <label for="email">Почта</label>
+                    <input type="text" id="email" placeholder="user@example.com" />
+                    <small>Сообщение об ошибке</small>
                 </div>
-                <div class="input-box">
-                    <input data-required="Tele" class="RegAuto" type="tel" name="telephone" placeholder="+XXXXXXXXXX">
+                <div class="form-control">
+                    <label for="telephone">Телефон</label>
+                    <input type="text" id="telephone" placeholder="+7XXXXXXXXXX" />
+                    <small>Сообщение об ошибке</small>
                 </div>
-                <div class="input-box">
-                    <input data-required="Pass" class="RegAuto" type="password" name="password" placeholder="Пароль" id="p1">
+                <div class="form-control">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" placeholder="Введите Ваш пароль" />
+                    <small>Сообщение об ошибке</small>
                 </div>
-                <div class="input-box">
-                    <input data-required="RPass" class="RegAuto" type="password" name="confirmPassword" placeholder="Повторение пароля" id="p2">
+                <div class="form-control">
+                    <label for="password2">Подтверждение пароля</label>
+                    <input type="password" id="password2" placeholder="Введите пароль снова" />
+                    <small>Сообщение об ошибке</small>
                 </div>
-                <button class="RegAuto" type="submit" >Зарегистрироваться</button>
+                <button type="submit">Зарегистрироваться</button>
             </form>
         </div>
     </body>
