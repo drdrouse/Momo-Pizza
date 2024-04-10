@@ -42,7 +42,7 @@
         }
     }
     function checkName(input) {
-        const re = /[^@#№%$.,;;^&()<>]/;
+        const re = /^(?!-#)(?!.*-$)[a-zA-Z-]+$/;;
         if (re.test(input.value.trim())) {
             showSuccess(input);
             return (true);
