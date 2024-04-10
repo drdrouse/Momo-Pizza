@@ -53,19 +53,7 @@
         }
     }
     
-    //function checkLength(input, min) {
-    //    if (input.value.length < min) {
-    //        showError(
-    //            input,
-    //            `Поле ${getFieldName(input)} должно быть длиной не менее ${min} символов`
-    //        );
-    //        return (false);
-    //    } else {
-    //        return (true);
-    //    }
-    //}
-
-    
+       
     function checkPasswordsMatch(input1, input2) {
         if (input1.value !== input2.value) {
             showError(input2, "Пароли не совпадают");
@@ -102,9 +90,9 @@
                 },
                 success: function (r) {
                     if (r) {
-                        window.location.replace("~/Autorization/Index");
+                        window.history.go(-1);
                     } else {
-                        alert("Пользователь не добавлен");
+                        alert("Пользователь с таким e-mail уже есть");
                     }
                 }
             });
