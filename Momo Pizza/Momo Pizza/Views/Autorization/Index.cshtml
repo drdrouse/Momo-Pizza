@@ -8,23 +8,26 @@
     <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="~/css/RegAuto.css">
+        <link rel="stylesheet" href="~/css/autorization.css">
         <script defer src="~/js/autorization.js"></script>
         <title>Авторизация</title>
     </head>
-    <body class="RegAuto">
+    <body>
         <div class="container">
-            <h1 class="RegAuto">Авторизация</h1>
-            <form action="/Autorization/Login" method="post" id="AutoForm">
-                <div class="input-box">
-                    <input data-required="Email" class="RegAuto" type="text" name="email" placeholder="E-mail" required>
+            <form id="form" class="form">
+                <h2>АВТОРИЗАЦИЯ</h2>
+                <div class="form-control">
+                    <label for="email">Логин</label>
+                    <input type="text" id="email" placeholder="Введите ваш логин" />
                 </div>
-                <div class="input-box">
-                    <input data-required="Pass" class="RegAuto" type="password" name="password" placeholder="Пароль" required>
+                <div class="form-control">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" placeholder="Введите ваш пароль" />
+                    <small>Сообщение об ошибке</small>
                 </div>
-                <button class="RegAuto" type="submit">Войти</button>
-                <a class="RegAuto" href="~/Registration/Index">Зарегистрироваться</a>
-            </form>
+                <button type="submit">Войти</button>
+                <a class="registrtion" href="~/Registration/Index">Зарегистрироваться</a>
+            </form>            
         </div>
     </body>
     </html>
