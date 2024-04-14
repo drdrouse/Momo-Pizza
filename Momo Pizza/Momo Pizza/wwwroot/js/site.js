@@ -1,4 +1,15 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿$('#exite').on('click', function () {
 
-// Write your JavaScript code.
+    $.ajax({
+        type: "POST",
+        url: "/Home/Exite",
+        success: function (r) {
+            if (r) {
+                window.location.href = '/Home/Index/';
+            } else {
+               
+            }
+        }
+    });
+});
+

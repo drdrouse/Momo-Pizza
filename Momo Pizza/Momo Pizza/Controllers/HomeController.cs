@@ -17,7 +17,15 @@ namespace Momo_Pizza.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Exite()
+        {
+            using (ApplicationContext db = new ApplicationContext())
+            {
 
+            }
+            return Json(false);
+        }
         public IActionResult Privacy()
         {
             return View();

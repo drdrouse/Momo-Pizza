@@ -38,6 +38,18 @@ header {
     margin-left:2%;
 
 }
+.exite {
+    float: right;
+    margin-right: 0%;
+    margin-left: 2%;
+    cursor: pointer;
+}
+.nickname {
+    float: right;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    letter-spacing: .20em;
+}
 .enter {
     font-size: 16px;
     line-height: 18px;
