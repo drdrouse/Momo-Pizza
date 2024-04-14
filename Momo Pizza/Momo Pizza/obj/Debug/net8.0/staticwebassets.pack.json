@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\Basket.png"
     },
     {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Confirm.PNG",
+      "PackagePath": "staticwebassets\\css\\Confirm.PNG"
+    },
+    {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Exite.png",
       "PackagePath": "staticwebassets\\css\\Exite.png"
     },
@@ -87,6 +91,10 @@
     {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\basket.css",
       "PackagePath": "staticwebassets\\css\\basket.css"
+    },
+    {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\confirm.css",
+      "PackagePath": "staticwebassets\\css\\confirm.css"
     },
     {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\footer.css",

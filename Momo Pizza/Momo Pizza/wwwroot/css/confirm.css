@@ -1,0 +1,25 @@
+﻿body {
+    background: #eee;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container {
+    margin-top: 50px;
+    margin-bottom: -50px;
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.image {
+    left: 615px;
+
+    position: absolute;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+    .image:hover {
+        transform: scale(1.1); 
+    }
