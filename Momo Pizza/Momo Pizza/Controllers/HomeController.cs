@@ -22,7 +22,13 @@ namespace Momo_Pizza.Controllers
         {
             using (ApplicationContext db = new ApplicationContext())
             {
-
+                Authorized authorized = db.Authorizeds.FirstOrDefault();
+                if (authorized != null)
+                {
+                    db.Authorizeds.Remove(authorized);
+                    db.SaveChanges();
+                    return Json(true);
+                }
             }
             return Json(false);
         }
