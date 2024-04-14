@@ -86,7 +86,7 @@
                 },
                 success: function (r) {
                     if (r) {
-                        window.history.go(-1);
+                        window.location.href = '/Autorization/Index/';
                     } else {
                         alert("Пользователь с таким e-mail уже есть");
                     }

@@ -31,7 +31,8 @@
             },
             success: function (r) {
                 if (r) {
-                    showSuccess()
+                    showSuccess();
+                    window.location.href = '/Home/Index/';
                 } else {
                     showError(password, "Неверно введён логин или пароль");
                 }
