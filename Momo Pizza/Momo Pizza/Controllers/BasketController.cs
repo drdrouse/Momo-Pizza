@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Momo_Pizza.Models;
+using NuGet.Configuration;
 
 namespace Momo_Pizza.Controllers
 {
@@ -8,6 +9,25 @@ namespace Momo_Pizza.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+        [HttpPost]
+        public IActionResult Confirm()
+        {
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                User user = db.Users.Where(id => id.UserId == db.Authorizeds.ToList().FirstOrDefault().User_id).FirstOrDefault();
+                Basket basket = db.Baskets.Where(id => id.User_ID == user.UserId).FirstOrDefault();
+                foreach (Order ord in db.Orders.Where(id => id.Id_Basket == basket.BasketId))
+                {
+                    if (ord != null)
+                    {
+                        db.Orders.Remove(ord);
+                        db.SaveChanges();
+                        
+                    }
+                }
+                return Json(true);
+            }
         }
 
         [HttpPost]

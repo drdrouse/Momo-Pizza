@@ -71,5 +71,20 @@ $(document).ready(function () {
         check = true;
         $(".remove").click();
     });
+
+    $(".confirm").click(function () {
+        
+        $.ajax({
+            type: "POST",
+            url: "/Basket/Confirm",
+            success: function (r) {
+                if (r) {
+                    window.location.href = '/Confirm/Index/';
+                } else {
+                    
+                }
+            }
+        });
+    });
 });
 

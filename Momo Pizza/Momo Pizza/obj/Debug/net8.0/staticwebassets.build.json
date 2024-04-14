@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4q/ccQnQO71PGwZwhrgevwKFQKFLgjBwlIUieK/O0pw=",
+  "Hash": "AddAu7GLtMTMSnKE+r89eleXc9sGrWQ+YCf1VLj/JBw=",
   "Source": "Momo Pizza",
   "BasePath": "_content/Momo Pizza",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\autorization.css"
+    },
+    {
+      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\basket.css",
+      "SourceId": "Momo Pizza",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\",
+      "BasePath": "_content/Momo Pizza",
+      "RelativePath": "css/basket.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\basket.css"
     },
     {
       "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Basket.png",
@@ -471,25 +490,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\registration.css"
-    },
-    {
-      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\shopping_cart.css",
-      "SourceId": "Momo Pizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\",
-      "BasePath": "_content/Momo Pizza",
-      "RelativePath": "css/shopping_cart.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\shopping_cart.css"
     },
     {
       "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\site.css",
