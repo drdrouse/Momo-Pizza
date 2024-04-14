@@ -25,11 +25,27 @@
         <button class="enter">
             <a href="~/Autorization/Index">Войти</a>
         </button>
-        <div class="basket">
-            <a href="~/Basket/Index">
-                <img src="~/css/Basket.png" width="48рх" height="48px" />
-            </a>
-        </div>
+        @{
+            using(ApplicationContext db = new ApplicationContext())
+            {
+                if (db.Authorizeds.ToList().Count == 0)
+                {
+                    <div class="basket">
+                        <a href="~/Autorization/Index">
+                            <img src="~/css/Basket.png" width="48рх" height="48px" />
+                        </a>
+                    </div>
+                }
+                else
+                {
+                    <div class="basket">
+                        <a href="~/Basket/Index">
+                            <img src="~/css/Basket.png" width="48рх" height="48px" />
+                        </a>
+                    </div>
+                }
+            }
+        }
     </header>
     <div class="container">
         <main role="main" class="pb-3">
