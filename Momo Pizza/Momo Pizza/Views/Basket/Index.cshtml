@@ -17,6 +17,7 @@
             {
                 User user = db_basket.Users.Where(id => id.UserId == db_basket.Authorizeds.ToList().FirstOrDefault().User_id).FirstOrDefault();
                 Basket basket = db_basket.Baskets.Where(id => id.User_ID==user.UserId).FirstOrDefault();
+                Order orders = db_basket.Orders.Where(id => id.Id_Basket == basket.BasketId).FirstOrDefault();
                 foreach (Order ord in db_basket.Orders.Where(id => id.Id_Basket == basket.BasketId))
                 {
                     Pizza pizza = db_basket.Pizzas.Where(id => id.PizzaId == ord.Id_Pizza).FirstOrDefault();
@@ -68,9 +69,16 @@
                         </footer>
                     </article>
                 }
+                if (orders != null)
+                {
+                    <div>
+                        <button id="confirm" class="confirm">Подтвердить заказ</button>
+                    </div>
+                }
             }
+            
         }
-        <button id="confirm" class="confirm">Подтвердить заказ</button>
+        
     </div>
     
 </body>
