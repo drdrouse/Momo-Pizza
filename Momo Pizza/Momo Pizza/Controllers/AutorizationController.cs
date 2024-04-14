@@ -18,6 +18,14 @@ namespace Momo_Pizza.Controllers
                 User user = db.Users.Where(p => p.Email == email && p.Password==password).FirstOrDefault();
                 if (user != null)
                 {
+                    Authorized authorized = new Authorized
+                    {
+                        Login = email,
+                        Password = password,
+                        User_id = user.UserId,
+                    };
+                    db.Authorizeds.Add(authorized);
+                    db.SaveChanges();
                     return Json(true);
                 }
             }

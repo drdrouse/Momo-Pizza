@@ -10,13 +10,14 @@ namespace Momo_Pizza.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Add_Order(int pizzaID, int orderID)
+        public IActionResult Add_Order(int pizzaID, int Aut_Id)
         {
             using (ApplicationContext db = new ApplicationContext())
             {
+                Authorized authorized = db.Authorizeds.Where(id => id.AuthorizedId == Aut_Id).FirstOrDefault();
                 Pizza pizza = db.Pizzas.Where(id => id.PizzaId == pizzaID).FirstOrDefault();
-                Basket basket = db.Baskets.Where(id => id.BasketId == orderID).FirstOrDefault();
-                Order yet_Order = db.Orders.Where(id=>id.Id_Pizza == pizzaID).FirstOrDefault();
+                Basket basket = db.Baskets.Where(id => id.User_ID == authorized.User_id).FirstOrDefault();
+                Order yet_Order = db.Orders.Where(id=>id.Id_Pizza == pizzaID && id.Id_Basket==basket.BasketId).FirstOrDefault();
 
                 Order order = new Order
                 {

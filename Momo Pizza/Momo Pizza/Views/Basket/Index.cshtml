@@ -15,8 +15,9 @@
         @{
             using (ApplicationContext db_basket = new ApplicationContext())
             {
-
-                foreach (Order ord in db_basket.Orders.Where(id => id.Id_Basket == 1))
+                User user = db_basket.Users.Where(id => id.UserId == db_basket.Authorizeds.ToList().FirstOrDefault().User_id).FirstOrDefault();
+                Basket basket = db_basket.Baskets.Where(id => id.User_ID==user.UserId).FirstOrDefault();
+                foreach (Order ord in db_basket.Orders.Where(id => id.Id_Basket == basket.BasketId))
                 {
                     Pizza pizza = db_basket.Pizzas.Where(id => id.PizzaId == ord.Id_Pizza).FirstOrDefault();
                     Sauce sauce = db_basket.Sauces.Where(id => id.SauceId == pizza.ID_Sauce).FirstOrDefault();
