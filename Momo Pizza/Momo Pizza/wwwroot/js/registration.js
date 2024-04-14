@@ -67,11 +67,7 @@
     }
 
     
-    function getFieldName(input) {
-        return input.id.charAt(0).toUpperCase() + input.id.slice(1);
-    }
-
-    
+       
     // Устанавливаем слушатели событий на форму
     form.addEventListener("submit", function (e) {
         e.preventDefault();
