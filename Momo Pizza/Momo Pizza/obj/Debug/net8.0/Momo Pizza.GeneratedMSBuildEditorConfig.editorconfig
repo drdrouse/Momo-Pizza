@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Учёба\Предметы\WEB-системы\Курсач\Momo Pizza\Momo Pizza
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Учёба/Предметы/WEB-системы/Курсач/Momo Pizza/Momo Pizza/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Учёба/Предметы/WEB-системы/Курсач/Momo Pizza/Momo Pizza/Views/Autorization/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3JpemF0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

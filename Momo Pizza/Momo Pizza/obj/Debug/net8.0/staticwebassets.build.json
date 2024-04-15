@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zGPIiL4wr4hSsjvZiO1fSPMf9ZAQSX9GO4iUbWmJ07o=",
+  "Hash": "Kp/rjPlx6lAcBw9/ZWvSz9Wpbw/EuPbMbv14tQ/0wss=",
   "Source": "Momo Pizza",
   "BasePath": "_content/Momo Pizza",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Momo Pizza.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\about.css",
+      "SourceId": "Momo Pizza",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\",
+      "BasePath": "_content/Momo Pizza",
+      "RelativePath": "css/about.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\about.css"
     },
     {
       "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\autorization.css",
@@ -376,6 +395,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Menu.css"
+    },
+    {
+      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Momo-Pizza.png",
+      "SourceId": "Momo Pizza",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\",
+      "BasePath": "_content/Momo Pizza",
+      "RelativePath": "css/Momo-Pizza.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Momo-Pizza.png"
     },
     {
       "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Photo\\Cheasy.jpg",

@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\css\\Menu.css"
     },
     {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Momo-Pizza.png",
+      "PackagePath": "staticwebassets\\css\\Momo-Pizza.png"
+    },
+    {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Photo\\Cheasy.jpg",
       "PackagePath": "staticwebassets\\css\\Photo\\Cheasy.jpg"
     },
@@ -83,6 +87,10 @@
     {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Photo\\Pepperoni.jpg",
       "PackagePath": "staticwebassets\\css\\Photo\\Pepperoni.jpg"
+    },
+    {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\about.css",
+      "PackagePath": "staticwebassets\\css\\about.css"
     },
     {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\autorization.css",
