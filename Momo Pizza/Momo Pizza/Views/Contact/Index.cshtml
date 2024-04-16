@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/contact.css">
+</head>
+<body>
+    <div id="container">
+        <h1>&bull; Оцените нас &bull;</h1>
+        <div class="underline">
+        </div>
+        <div class="icon_wrapper">
+            <img src="~/css/Для отзыва.jpg" width="60px" height="60px" />
+        </div>
+        <form action="#" method="post" id="contact_form">
+            <div class="name">
+                <label for="name"></label>
+                <input type="text" placeholder="Никнейм" name="name" id="name_input" required>
+            </div>
+            <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="E-mail" name="email" id="email_input" required>
+            </div>
+            <div class="telephone">
+                <label for="name"></label>
+                <input type="text" placeholder="Номер телефона" name="telephone" id="telephone_input" required>
+            </div>
+            <div class="subject">
+                <label for="subject"></label>
+                <select placeholder="Как вы оцениваете Momo-Pizza?" name="subject" id="subject_input" required>
+                    <option disabled hidden selected>Как вы оцениваете Momo-Pizza?</option>
+                    <option>It was perfect</option>
+                    <option>Щикарно!</option>
+                    <option>I mean its all right</option>
+                    <option>Всё нормально как обычно</option>
+                    <option>Ну норм</option>
+                    <option>Буээээ</option>
+                </select>
+            </div>
+            <div class="message">
+                <label for="message"></label>
+                <textarea name="message" placeholder="Позвольте узнать по подробнее" cols="30" rows="5" required></textarea>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Оправить" id="form_button" />
+            </div>
+        </form><!-- // End form -->
+    </div><!-- // End #container -->
+
+</body>
+
+

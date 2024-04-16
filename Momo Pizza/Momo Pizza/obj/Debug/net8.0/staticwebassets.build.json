@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Kp/rjPlx6lAcBw9/ZWvSz9Wpbw/EuPbMbv14tQ/0wss=",
+  "Hash": "OcDyYlW70hnau0s99DyhPGpGdoidJqU09fA3zgkF3aA=",
   "Source": "Momo Pizza",
   "BasePath": "_content/Momo Pizza",
   "Mode": "Default",
@@ -167,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Confirm.PNG"
+    },
+    {
+      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\contact.css",
+      "SourceId": "Momo Pizza",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\",
+      "BasePath": "_content/Momo Pizza",
+      "RelativePath": "css/contact.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\contact.css"
     },
     {
       "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Exite.png",
@@ -604,6 +623,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\slider.css"
+    },
+    {
+      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\Для отзыва.jpg",
+      "SourceId": "Momo Pizza",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\",
+      "BasePath": "_content/Momo Pizza",
+      "RelativePath": "css/Для отзыва.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Для отзыва.jpg"
     },
     {
       "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\favicon.ico",
