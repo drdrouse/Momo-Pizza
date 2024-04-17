@@ -357,41 +357,4 @@ a {
         background: #429188;
     }
 
-.type {
-    background: #fcfcfc;
-    font-size: 13px;
-    padding: 10px 16px;
-    left: 100%;
-}
 
-.type, .color {
-    border: 1px solid #ccc;
-    border-style: none none solid none;
-    position: absolute;
-}
-
-.color {
-    width: 40px;
-    height: 40px;
-    right: -40px;
-}
-
-.red {
-    background: #cb5a5e;
-}
-
-.yellow {
-    background: #f1c40f;
-}
-
-.blue {
-    background: #3598dc;
-}
-
-.minused {
-    margin: 0 50px 0 0 !important;
-}
-
-.added {
-    margin: 0 -50px 0 0 !important;
-}

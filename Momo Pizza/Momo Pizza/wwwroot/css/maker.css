@@ -1,1 +1,212 @@
-﻿
+﻿@import "https://fonts.googleapis.com/css?family=Merriweather";
+.main_item {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    align-content: center;
+}
+    .main_item h3 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-size: 22px;
+        color: #F16246;
+    }
+.start_ingridients {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, 334px);
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    justify-items: center;
+    column-gap: 100px;
+    row-gap: 45px;
+    margin: 10px auto;
+    justify-items: end;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 100px;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* Стили контейнера */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    .container h2 {
+        margin-top: 0;
+        margin-bottom: 28px;
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        letter-spacing: .20em;
+
+    }
+
+/* Стили выпадающих списков */
+select {
+    background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png) no-repeat right;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: #5A5A5A;
+    font: inherit;
+    margin: 0;
+    background: none;
+    border: none;
+    border-bottom: solid 2px #474544;
+    color: #474544;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.ingridient_label {
+    padding: 20px 0;
+    border-bottom: 2px solid rgba(0,0,0,.05);
+    text-align: center;
+    width: 980px;
+}
+    .ingridient_label h3 {
+        font-size: 20px;
+        letter-spacing: 1px;
+        max-width: 320px;
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        color: #F16246;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+        .ingridient_label h3::before {
+            content: "";
+            position: absolute;
+            top: calc(50% - 1px);
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #E5EDEA;
+            z-index: -1;
+        }
+    .ingridient_label span{
+        background: white;
+        padding: 0 20px;
+    }
+
+
+/* Стили элемента ингредиента */
+.ingredient {
+    /*width: 50%;*/ /* 50% ширины контейнера */
+    width: 150px;
+    height: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Размещение элементов по вертикали */
+    align-items: flex-start; /* Выравнивание элементов по левому краю */
+    margin-top: 10px;
+}
+
+    .ingredient img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+
+.ingredient-name {
+    color: #000;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 17px 0 20px 0;
+    flex-grow: 1; /* Название занимает все доступное пространство */
+    line-height: 1.5;
+    word-break: break-word;
+    white-space: nowrap;
+    margin-right: 10px; /* Отступ справа от названия */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="number"] {
+    width: 30px;
+}
+
+.add-to-cart-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.pizza-container {
+    width: 350px;
+    height: 350px;
+    border: 1px solid #ccc;
+    position: relative;
+    margin-right: 200px;
+}
+
+#pizza-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.price-container {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+.ingredient-list {
+    margin: 0 auto;
+    width: 980px;
+}
+    .ingredient-list ul {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 20px;
+        list-style: none;
+        padding-left: 0;
+        border: 1px solid #CCC;
+        border-collapse: collapse;
+        border: none;
+        list-style-type: none;
+        justify-items: center;
+    }
+    .ingredient-list li {
+        flex: 0 0 50%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        height: auto;
+    }

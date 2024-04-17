@@ -3,5 +3,143 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Конструктор пиццы</title>
+        <link rel="stylesheet" href="~/css/maker.css">
+        <script src="~/js/maker.js" defer="defer"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>
+    <body>
+    @{
+        using(ApplicationContext db = new ApplicationContext())
+        {
+            <main>              
+
+                <div class="container">
+                    <h2>Пицца-Мэйкер</h2>
+                    <div class="pizza-container">
+                        <canvas id="pizza-canvas"></canvas>
+                        <div class="price-container"></div>
+                    </div>
+
+                    <div class="start_ingridients">
+                        <div class="main_item">
+                            <h3>Тесто</h3>
+                            <select id="dough">
+                                    <option value="Тонкое">Итальянское тесто</option>
+                                    <option value="Толстое">Нью-йоркское тесто</option>
+                            </select>
+                        </div>
+                        <div class="main_item">
+                            <h3>Соус</h3>
+                            <select id="sauce">
+                                    <option value="Томатаный">Томатный соус</option>
+                                    <option value="Сырный">Сырный соус</option>
+                                    <option value="Песто">Соус Песто</option>
+                            </select>
+                        </div>
+                    </div>
+                   
+                    <div class="ingridient_label">
+                        <h3><span>Ингредиенты</span></h3>
+                    </div>
+                    <div class="ingredient-list">
+                        <ul>
+
+                            <li class="ingredient">
+                                <img src="~/css/Ingredients/Pepperoni.png" alt="Пепперони">
+                                <div class="ingredient-info">
+                                    <span class="ingredient-name">Пепперони</span>
+                                    <input type="checkbox" id="Пепперони">
+                                    <input type="number" value="1" min="1" max="9">
+                                </div>
+                            </li>
+                            <li class="ingredient">
+                                <img src="~/css/Ingredients/Parmezan.png" alt="Пармезан">
+                                <div class="ingredient-info">
+                                    <span class="ingredient-name">Пармезан</span>
+                                    <input type="checkbox" id="Пармезан">
+                                    <input type="number" value="1" min="1" max="9">
+                                </div>
+                            </li>
+                            <li class="ingredient">
+                                <img src="~/css/Ingredients/Chesse.png" alt="Чеддер">
+                                <div class="ingredient-info">
+                                    <span class="ingredient-name">Чеддер</span>
+                                    <input type="checkbox" id="Чеддер">
+                                    <input type="number" value="1" min="1" max="9">
+                                </div>
+                            </li>
+                            <li class="ingredient">
+                                <img src="~/css/Ingredients/Mortad.png" alt="Мортаделла">
+                                <div class="ingredient-info">
+                                    <span class="ingredient-name">Мортаделла</span>
+                                    <input type="checkbox" id="Мортаделла">
+                                    <input type="number" value="1" min="1" max="9">
+                                </div>
+                            </li>
+                            <li class="ingredient">
+                                <img src="~/css/Ingredients/Brinza.png" alt="Брынза">
+                                <div class="ingredient-info">
+                                    <span class="ingredient-name">Брынза</span>
+                                    <input type="checkbox" id="Брынза">
+                                    <input type="number" value="1" min="1" max="9">
+                                </div>
+                            </li>
+                            <li class="ingredient">
+                                <img src="~/css/Ingredients/Mos.png" alt="Моцарелла">
+                                <div class="ingredient-info">
+                                    <span class="ingredient-name">Моцарелла</span>
+                                    <input type="checkbox" id="Моцарелла">
+                                    <input type="number" value="1" min="1" max="9">
+                                </div>
+                            </li>
+                            <li class="ingredient">
+                                <img src="~/css/Ingredients/Chiken.png" alt="Цыплёнок">
+                                <div class="ingredient-info">
+                                    <span class="ingredient-name">Цыплёнок</span>
+                                    <input type="checkbox" id="Цыплёнок">
+                                    <input type="number" value="1" min="1" max="9">
+                                </div>
+                            </li>
+                            <li class="ingredient">
+                                <img src="~/css/Ingredients/Pineapple.png" alt="Ананас">
+                                <div class="ingredient-info">
+                                    <span class="ingredient-name">Ананас</span>
+                                    <input type="checkbox" id="Ананас">
+                                    <input type="number" value="1" min="1" max="9">
+                                </div>
+                            </li>
+                            <li class="ingredient">
+                                <img src="~/css/Ingredients/Becon.png" alt="Бекон">
+                                <div class="ingredient-info">
+                                    <span class="ingredient-name">Бекон</span>
+                                    <input type="checkbox" id="Бекон">
+                                    <input type="number" value="1" min="1" max="9">
+                                </div>
+                            </li>
+                            <li class="ingredient">
+                                <img src="~/css/Ingredients/Grib.png" alt="Шампиньоны">
+                                <div class="ingredient-info">
+                                    <span class="ingredient-name">Шампиньоны</span>
+                                    <input type="checkbox" id="Шампиньоны">
+                                    <input type="number" value="1" min="1" max="9">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="add-to-cart-btn">В корзину</button>
+                </div>
+            </main>
+        }     
+    }
+            
+    </body>
+</html>
+
 
