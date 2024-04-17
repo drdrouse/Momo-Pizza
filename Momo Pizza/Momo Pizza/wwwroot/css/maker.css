@@ -133,8 +133,57 @@ select {
         margin-bottom: 5px;
         border: 1px solid #ccc;
         border-radius: 5px;
+        cursor: pointer;
+    }
+label {
+    border: 1px solid #fff;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+
+    label:before {
+        background-color: white;
+        color: white;
+        content: " ";
+        display: block;
+        border-radius: 50%;
+        border: 1px solid grey;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 28px;
+        transition-duration: 0.4s;
+        transform: scale(0);
     }
 
+    label img {
+        height: 100px;
+        width: 100px;
+        transition-duration: 0.2s;
+        transform-origin: 50% 50%;
+    }
+
+:checked + label {
+    border-color: #ddd;
+}
+
+    :checked + label:before {
+        content: "✓";
+        background-color: grey;
+        transform: scale(1);
+    }
+
+    :checked + label img {
+        transform: scale(0.9);
+        box-shadow: 0 0 5px #333;
+        z-index: -1;
+    }
 
 .ingredient-name {
     color: #000;
@@ -150,10 +199,12 @@ select {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 
+
 input[type="checkbox"] {
-    margin-right: 5px;
+    display: none;
 }
 
 input[type="number"] {
@@ -169,11 +220,15 @@ input[type="number"] {
 }
 
 .pizza-container {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     border: 1px solid #ccc;
     position: relative;
-    margin-right: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
 }
 
 #pizza-canvas {
@@ -192,7 +247,7 @@ input[type="number"] {
 }
     .ingredient-list ul {
         display: grid;
-        grid-template-columns: repeat(5, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 20px;
         list-style: none;
         padding-left: 0;

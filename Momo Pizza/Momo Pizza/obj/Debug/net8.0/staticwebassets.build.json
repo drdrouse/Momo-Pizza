@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RKWswyEySg5hCm12P+kSifCVv7mty2but3gSTZXLazk=",
+  "Hash": "AD4r+9CzhHJW1pIzOxSPaS27rxzZCLeaqCoEqBcnizE=",
   "Source": "Momo Pizza",
   "BasePath": "_content/Momo Pizza",
   "Mode": "Default",
@@ -1062,6 +1062,25 @@
       "OriginalItemSpec": "wwwroot\\js\\Начинки\\Бекон.png"
     },
     {
+      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Начинки\\Боварские сосиски.png",
+      "SourceId": "Momo Pizza",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\",
+      "BasePath": "_content/Momo Pizza",
+      "RelativePath": "js/Начинки/Боварские сосиски.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Начинки\\Боварские сосиски.png"
+    },
+    {
       "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Начинки\\Брынза.png",
       "SourceId": "Momo Pizza",
       "SourceType": "Discovered",
@@ -1079,6 +1098,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Начинки\\Брынза.png"
+    },
+    {
+      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Начинки\\Красный лук.png",
+      "SourceId": "Momo Pizza",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\",
+      "BasePath": "_content/Momo Pizza",
+      "RelativePath": "js/Начинки/Красный лук.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Начинки\\Красный лук.png"
     },
     {
       "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Начинки\\Мортаделла.png",
@@ -1288,6 +1326,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Начинки\\Чеддер.png"
+    },
+    {
+      "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Начинки\\Чоризо.png",
+      "SourceId": "Momo Pizza",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\",
+      "BasePath": "_content/Momo Pizza",
+      "RelativePath": "js/Начинки/Чоризо.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Начинки\\Чоризо.png"
     },
     {
       "Identity": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Начинки\\Шампиньоны.png",

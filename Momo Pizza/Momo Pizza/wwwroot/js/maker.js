@@ -4,31 +4,34 @@ const ctx = canvas.getContext('2d');
 
 // Изображения пиццы
 const doughImages = {
-    Тонкое: '/js/Начинки/Тонкое.png',
-    Толстое: '/js/Начинки/Толстое.png'
+    4: '/js/Начинки/Тонкое.png',
+    6: '/js/Начинки/Толстое.png'
 };
 
 const sauceImages = {
-    Томатный: '/js/Начинки/Томатный.png',
-    Сырный: '/js/Начинки/Сырный.png',
-    Песто: '/js/Начинки/Песто.png'
+    8: '/js/Начинки/Томатный.png',
+    3: '/js/Начинки/Сырный.png',
+    4: '/js/Начинки/Песто.png'
 };
 
 const ingredientImages = {
-    Пепперони: '/js/Начинки/Пепперони.png',
-    Пармезан: '/js/Начинки/Пармезан.png',
-    Чеддер: '/js/Начинки/Чеддер.png',
-    Мортаделла: '/js/Начинки/Мортаделла.png',
-    Брынза: '/js/Начинки/Брынза.png',
-    Моцарелла: '/js/Начинки/Моцарелла.png',
-    Цыплёнок: '/js/Начинки/Цыплёнок.png',
-    Ананас: '/js/Начинки/Ананас.png',
-    Бекон: '/js/Начинки/Бекон.png',
-    Шампиньоны: '/js/Начинки/Шампиньоны.png'
+    1: '/js/Начинки/Пепперони.png',
+    2: '/js/Начинки/Пармезан.png',
+    3: '/js/Начинки/Чеддер.png',
+    5: '/js/Начинки/Мортаделла.png',
+    6: '/js/Начинки/Брынза.png',
+    16: '/js/Начинки/Моцарелла.png',
+    7: '/js/Начинки/Цыплёнок.png',
+    9: '/js/Начинки/Ананас.png',
+    10: '/js/Начинки/Бекон.png',
+    19: '/js/Начинки/Шампиньоны.png',
+    12: '/js/Начинки/Красный лук.png',
+    13: '/js/Начинки/Боварские сосиски.png',
+    15: '/js/Начинки/Чоризо.png'
 };
 // Текущие настройки
-let dough = 'Тонкое';
-let sauce = 'Томатный';
+let dough;
+let sauce;
 let ingredients = [];
 
 // Функция отрисовки пиццы
@@ -70,7 +73,7 @@ document.getElementById('sauce').addEventListener('change', () => {
     drawPizza();
 });
 
-const ingredientCheckboxes = document.querySelectorAll('.ingredient-info input[type="checkbox"]');
+const ingredientCheckboxes = document.querySelectorAll('.ingredient input[type="checkbox"]');
 console.log(ingredientCheckboxes);
 
 const nodesArray = Array.from(ingredientCheckboxes);

@@ -217,8 +217,16 @@
       "PackagePath": "staticwebassets\\js\\Начинки\\Бекон.png"
     },
     {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Начинки\\Боварские сосиски.png",
+      "PackagePath": "staticwebassets\\js\\Начинки\\Боварские сосиски.png"
+    },
+    {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Начинки\\Брынза.png",
       "PackagePath": "staticwebassets\\js\\Начинки\\Брынза.png"
+    },
+    {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Начинки\\Красный лук.png",
+      "PackagePath": "staticwebassets\\js\\Начинки\\Красный лук.png"
     },
     {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Начинки\\Мортаделла.png",
@@ -263,6 +271,10 @@
     {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Начинки\\Чеддер.png",
       "PackagePath": "staticwebassets\\js\\Начинки\\Чеддер.png"
+    },
+    {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Начинки\\Чоризо.png",
+      "PackagePath": "staticwebassets\\js\\Начинки\\Чоризо.png"
     },
     {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\Начинки\\Шампиньоны.png",
