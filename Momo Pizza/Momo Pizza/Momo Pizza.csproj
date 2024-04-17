@@ -9,11 +9,13 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\js\Basket.js" />
+    <Content Remove="wwwroot\js\maker.js" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\css\Photo\No_image.jpg" />
     <None Include="wwwroot\css\Photo\Pepperoni.jpg" />
+    <None Include="wwwroot\js\maker.js" />
     <None Include="wwwroot\js\basket.js" />
   </ItemGroup>
 

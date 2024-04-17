@@ -35,7 +35,7 @@ textarea {
 #container {
     border: solid 3px #474544;
     max-width: 768px;
-    margin: 60px auto;
+    margin: 42px auto;
     position: relative;
     border-radius: 20px;
 }
@@ -182,6 +182,7 @@ textarea {
     -o-transition: all 0.3s;
     transition: all 0.3s;
     border-radius: 20px;
+    width: 100%;
 }
 
     #form_button:hover {

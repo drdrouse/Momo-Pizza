@@ -113,6 +113,10 @@
       "PackagePath": "staticwebassets\\css\\footer.css"
     },
     {
+      "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\maker.css",
+      "PackagePath": "staticwebassets\\css\\maker.css"
+    },
+    {
       "Id": "D:\\Учёба\\Предметы\\WEB-системы\\Курсач\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\registration.css",
       "PackagePath": "staticwebassets\\css\\registration.css"
     },
