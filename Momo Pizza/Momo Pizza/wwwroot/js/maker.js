@@ -1,19 +1,29 @@
 ﻿
 const canvas = document.getElementById('pizza-canvas');
 const ctx = canvas.getContext('2d');
+const Price = document.getElementById('full-price');
+const Sauce = document.getElementById('sauce');
 
 // Изображения пиццы
 const doughImages = {
     4: '/js/Начинки/Тонкое.png',
     6: '/js/Начинки/Толстое.png'
 };
-
+const doughCost = {
+    4: 250,
+    6: 300
+}
 const sauceImages = {
     8: '/js/Начинки/Томатный.png',
     3: '/js/Начинки/Сырный.png',
     4: '/js/Начинки/Песто.png'
 };
-
+const sauceCost = {
+    0: 0,
+    8: 50,
+    3: 45,
+    4: 60
+}
 const ingredientImages = {
     1: '/js/Начинки/Пепперони.png',
     2: '/js/Начинки/Пармезан.png',
@@ -29,10 +39,28 @@ const ingredientImages = {
     13: '/js/Начинки/Боварские сосиски.png',
     15: '/js/Начинки/Чоризо.png'
 };
+const ingredientCost = {
+    1: 40,
+    2: 50,
+    3: 45,
+    5: 55,
+    6: 89,
+    16: 70,
+    7: 75,
+    9: 96,
+    10: 50,
+    19: 55,
+    12: 45,
+    13: 120,
+    15: 109
+};
 // Текущие настройки
-let dough;
+let dough = 4;
 let sauce;
 let ingredients = [];
+let priceDough = 0;
+let priceIngridient = 0;
+let priceSauce = 0;
 
 // Функция отрисовки пиццы
 function drawPizza() {
@@ -41,7 +69,7 @@ function drawPizza() {
     // Тесто
     const doughImage = new Image(50, 50);
     doughImage.src = doughImages[dough];
-    console.log(doughImages[dough])
+
     doughImage.onload = () => {
         ctx.drawImage(doughImage, 0, 0, canvas.width, canvas.height)
     }
@@ -61,22 +89,77 @@ function drawPizza() {
         };
     });
 }
+//Функция обновления стоимости
+function updatePriceDough() {
+    var cost = doughCost[dough];
+    priceDough = cost;
+    Price.innerHTML = cost + "₽";
+ }
 
-// Обработчики событий
-document.getElementById('dough').addEventListener('change', () => {
-    dough = document.getElementById('dough').value;
-    drawPizza();
-});
-
-document.getElementById('sauce').addEventListener('change', () => {
-    sauce = document.getElementById('sauce').value;
-    drawPizza();
-});
+function updatePriceSauce() {
+    var cost = sauceCost[sauce];
+    priceSauce = cost;
+    Price.innerHTML = priceSauce + priceDough + "₽";
+}
+function updatePriceIngridient() {
+    if (ingredients.length > 0) {
+        priceIngridient = 0
+        ingredients.forEach(ingredient => {
+            priceIngridient = priceIngridient + ingredientCost[ingredient];
+            Price.innerHTML = priceSauce + priceDough + priceIngridient + "₽";
+        });
+        priceIngridient = 0
+    } else {
+        Price.innerHTML = priceSauce + priceDough + "₽";
+    }
+}
 
 const ingredientCheckboxes = document.querySelectorAll('.ingredient input[type="checkbox"]');
 console.log(ingredientCheckboxes);
 
 const nodesArray = Array.from(ingredientCheckboxes);
+// Обработчики событий
+document.getElementById('dough').addEventListener('change', () => {
+    dough = document.getElementById('dough').value;
+    var el = $(this);
+    for (let node of ingredientCheckboxes) {
+        console.log(node.checked);
+        console.log(node.id);
+        const ingredient = node.id;
+        if (node.checked == true) {
+            
+            ingredients = ingredients.filter(i => i !== ingredient);
+            node.checked = !node.checked
+        } else {
+
+        }
+    }
+    Sauce.value = 0;
+    sauce = 0;
+    drawPizza();
+    updatePriceDough();
+});
+
+document.getElementById('sauce').addEventListener('change', () => {
+    sauce = document.getElementById('sauce').value;
+    
+    for (let node of ingredientCheckboxes) {
+        console.log(node.checked);
+        console.log(node.id);
+        const ingredient = node.id;
+        if (node.checked == true) {
+
+            ingredients = ingredients.filter(i => i !== ingredient);
+            node.checked = !node.checked
+        } else {
+
+        }
+    }
+    drawPizza();
+    updatePriceSauce();
+});
+
+
 
 for (let node of ingredientCheckboxes) {
     node.addEventListener('change', event => {
@@ -89,7 +172,7 @@ for (let node of ingredientCheckboxes) {
             ingredients = ingredients.filter(i => i !== ingredient);
         }
         drawPizza();
-        updatePrice();
+        updatePriceIngridient();
     })
 }
 $(".qt-plus").click(function () {
@@ -109,4 +192,16 @@ $(".qt-minus").click(function () {
 
 // Отрисовка пиццы при загрузке страницы
 drawPizza();
-updatePrice();
+updatePriceDough();
+
+var check = false;
+function changeVal(el) {
+    var qt = parseFloat(el.parent().children(".qt").html());
+    
+    var eq = Math.round(price * qt * 100) / 100;
+
+    el.parent().children(".full-price").html(eq + "₽");
+
+    changeTotal();
+}
+

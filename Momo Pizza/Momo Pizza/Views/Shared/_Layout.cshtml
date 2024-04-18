@@ -20,7 +20,20 @@
         <div class="menu">
             <ul>
                 <li><a href="~/Menu/Index">Меню</a></li>
-                <li><a href="~/Maker/Index">Пицца-мэйкер</a></li>
+                @{
+                    using (ApplicationContext db = new ApplicationContext())
+                    {
+                        if (db.Authorizeds.ToList().Count == 0)
+                        {
+                            <li><a href="~/Autorization/Index">Пицца-мэйкер</a></li>
+                        }
+                        else
+                        {
+                            <li><a href="~/Maker/Index">Пицца-мэйкер</a></li>
+                        }
+                    }
+                
+                }
                 <li><a href="~/About/Index">О нас</a></li>
             </ul>
         </div>

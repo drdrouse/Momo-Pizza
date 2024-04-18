@@ -13,6 +13,7 @@
     </div>
     <div class="container">
         @{
+            
             using (ApplicationContext db_basket = new ApplicationContext())
             {
                 User user = db_basket.Users.Where(id => id.UserId == db_basket.Authorizeds.ToList().FirstOrDefault().User_id).FirstOrDefault();
