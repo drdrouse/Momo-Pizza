@@ -44,16 +44,32 @@ const ingredientCost = {
     2: 50,
     3: 45,
     5: 55,
-    6: 89,
-    16: 70,
+    6: 89,    
     7: 75,
     9: 96,
-    10: 50,
-    19: 55,
+    10: 50,    
     12: 45,
     13: 120,
-    15: 109
+    15: 109,
+    16: 70,
+    19: 55
 };
+
+const ingridientNumber = {
+    1: 0,
+    2: 1,
+    3: 2,
+    5: 3,
+    6: 4,
+    7: 5,
+    9: 6,
+    10: 7,
+    12: 8,
+    13: 9,
+    15: 10,
+    16: 11,
+    19: 12
+}
 // Текущие настройки
 let dough = 4;
 let sauce;
@@ -168,8 +184,10 @@ for (let node of ingredientCheckboxes) {
         const ingredient = node.id;
         if (node.checked) {
             ingredients.push(ingredient);
+            $('span.qt').eq(ingridientNumber[ingredient]).html("1");
         } else {
             ingredients = ingredients.filter(i => i !== ingredient);
+            $('span.qt').eq(ingridientNumber[ingredient]).html("0");
         }
         drawPizza();
         updatePriceIngridient();
