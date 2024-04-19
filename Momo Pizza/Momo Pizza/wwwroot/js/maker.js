@@ -121,7 +121,8 @@ function updatePriceIngridient() {
     if (ingredients.length > 0) {
         priceIngridient = 0
         ingredients.forEach(ingredient => {
-            priceIngridient = priceIngridient + ingredientCost[ingredient];
+            var priceConcrete = parseInt($('span.qt').eq(ingridientNumber[ingredient]).text(), 10) * ingredientCost[ingredient];
+            priceIngridient = priceIngridient + priceConcrete;
             Price.innerHTML = priceSauce + priceDough + priceIngridient + "₽";
         });
         priceIngridient = 0
@@ -145,7 +146,8 @@ document.getElementById('dough').addEventListener('change', () => {
         if (node.checked == true) {
             
             ingredients = ingredients.filter(i => i !== ingredient);
-            node.checked = !node.checked
+            node.checked = !node.checked;
+            $('span.qt').eq(ingridientNumber[ingredient]).html("0");
         } else {
 
         }
@@ -166,7 +168,8 @@ document.getElementById('sauce').addEventListener('change', () => {
         if (node.checked == true) {
 
             ingredients = ingredients.filter(i => i !== ingredient);
-            node.checked = !node.checked
+            node.checked = !node.checked;
+            $('span.qt').eq(ingridientNumber[ingredient]).html("0");
         } else {
 
         }
@@ -197,6 +200,7 @@ $(".qt-plus").click(function () {
     child = $(this).parent().children(".qt");
     if (parseInt(child.html()) < 9) {
         child.html(parseInt(child.html()) + 1);
+        updatePriceIngridient();
     }
 });
 $(".qt-minus").click(function () {
@@ -205,6 +209,7 @@ $(".qt-minus").click(function () {
 
     if (parseInt(child.html()) > 1) {
         child.html(parseInt(child.html()) - 1);
+        updatePriceIngridient();
     }
 });
 
@@ -223,3 +228,17 @@ function changeVal(el) {
     changeTotal();
 }
 
+$(".add-to-cart-btn").click(function () {
+    alert("Ok")
+    //$.ajax({
+    //    type: "POST",
+    //    url: "/Basket/Confirm",
+    //    success: function (r) {
+    //        if (r) {
+    //            window.location.href = '/Confirm/Index/';
+    //        } else {
+
+    //        }
+    //    }
+    //});
+});
