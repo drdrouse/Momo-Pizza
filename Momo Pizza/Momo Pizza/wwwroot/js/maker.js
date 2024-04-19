@@ -230,20 +230,26 @@ function changeVal(el) {
 }
 
 $(".add-to-cart-btn").click(function () {
-    fullPrice = Price.innerHTML;
-    alert(fullPrice);
-    alert(dough);
-    alert(sauce);
-    alert(ingredients);
-    //$.ajax({
-    //    type: "POST",
-    //    url: "/Basket/Confirm",
-    //    success: function (r) {
-    //        if (r) {
-    //            window.location.href = '/Confirm/Index/';
-    //        } else {
+    fullPrice = parseInt(Price.innerHTML);
+    //alert(fullPrice);
+    //alert(dough);
+    //alert(sauce);
+    //alert(ingredients);
+    $.ajax({
+        type: "POST",
+        url: "/Maker/AddPizza",
+        data: {
+            "Price": fullPrice,
+            "IdDough": dough,
+            "idSauce": sauce,
+            "idIngredient": ingredients
+        },
+        success: function (r) {
+            if (r) {
+                window.location.href = '/Basket/Index/';
+            } else {
 
-    //        }
-    //    }
-    //});
+            }
+        }
+    });
 });
