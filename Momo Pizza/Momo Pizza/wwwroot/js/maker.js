@@ -77,6 +77,7 @@ let ingredients = [];
 let priceDough = 0;
 let priceIngridient = 0;
 let priceSauce = 0;
+let fullPrice = 0;
 
 // Функция отрисовки пиццы
 function drawPizza() {
@@ -229,7 +230,11 @@ function changeVal(el) {
 }
 
 $(".add-to-cart-btn").click(function () {
-    alert("Ok")
+    fullPrice = Price.innerHTML;
+    alert(fullPrice);
+    alert(dough);
+    alert(sauce);
+    alert(ingredients);
     //$.ajax({
     //    type: "POST",
     //    url: "/Basket/Confirm",

@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\web-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u043A\u0443\u0440\u0441\u0430\u0447\\momo pizza\\momo pizza\\views\\maker\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|solutionrelative:momo pizza\\views\\maker\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\web-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u043A\u0443\u0440\u0441\u0430\u0447\\momo pizza\\momo pizza\\wwwroot\\js\\registration.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|solutionrelative:momo pizza\\wwwroot\\js\\registration.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\web-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u043A\u0443\u0440\u0441\u0430\u0447\\momo pizza\\momo pizza\\wwwroot\\js\\maker.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|solutionrelative:momo pizza\\wwwroot\\js\\maker.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\web-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u043A\u0443\u0440\u0441\u0430\u0447\\momo pizza\\momo pizza\\views\\maker\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|solutionrelative:momo pizza\\views\\maker\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\web-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u043A\u0443\u0440\u0441\u0430\u0447\\momo pizza\\momo pizza\\controllers\\makercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 218,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,20 +46,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "registration.js",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\registration.js",
+              "RelativeDocumentMoniker": "Momo Pizza\\wwwroot\\js\\registration.js",
+              "ToolTip": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\registration.js",
+              "RelativeToolTip": "Momo Pizza\\wwwroot\\js\\registration.js",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAkwFIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-19T02:15:56.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "maker.js",
               "DocumentMoniker": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\maker.js",
               "RelativeDocumentMoniker": "Momo Pizza\\wwwroot\\js\\maker.js",
               "ToolTip": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\maker.js",
               "RelativeToolTip": "Momo Pizza\\wwwroot\\js\\maker.js",
-              "ViewState": "AQIAANwAAAAAAAAAAAA5wOYAAAATAAAA",
+              "ViewState": "AQIAAN8AAAAAAAAAAAAkwOkAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-04-17T04:10:42.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T04:10:42.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "basket.css",
               "DocumentMoniker": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\wwwroot\\css\\basket.css",
               "RelativeDocumentMoniker": "Momo Pizza\\wwwroot\\css\\basket.css",
@@ -63,12 +79,11 @@
               "RelativeToolTip": "Momo Pizza\\wwwroot\\css\\basket.css",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAAGYAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-17T10:08:54.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T10:08:54.841Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\Views\\Maker\\Index.cshtml",
               "RelativeDocumentMoniker": "Momo Pizza\\Views\\Maker\\Index.cshtml",
@@ -76,12 +91,11 @@
               "RelativeToolTip": "Momo Pizza\\Views\\Maker\\Index.cshtml",
               "ViewState": "AQIAAEUAAAAAAAAAAAAAAFMAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-17T01:13:45.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T01:13:45.195Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MakerController.cs",
               "DocumentMoniker": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\Controllers\\MakerController.cs",
               "RelativeDocumentMoniker": "Momo Pizza\\Controllers\\MakerController.cs",
@@ -89,8 +103,7 @@
               "RelativeToolTip": "Momo Pizza\\Controllers\\MakerController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T01:13:11.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T01:13:11.293Z"
             }
           ]
         }

@@ -14,10 +14,20 @@
         const small = formControl.querySelector("small");
         small.innerText = message;
     }
-
+    
     function showSuccess(input) {
         const formControl = input.parentElement;
         formControl.className = "form-control success";
+    }
+    function checkUsername(input) {
+        const re = /^[а-яА-Яa-zA-Z_]+$/;
+        if (re.test(input.value.trim())) {
+            showSuccess(input);
+            return (true);
+        } else {
+            showError(input, "Никнейм имеет неверный формат");
+            return (false);
+        }
     }
 
     function checkEmail(input) {
@@ -74,7 +84,8 @@
         if (checkEmail(email)
             & checkPassword(password)
             & checkTelephone(telephone)
-            & checkPasswordsMatch(password, password2)) {
+            & checkPasswordsMatch(password, password2)
+            & checkUsername(username)) {
             $.ajax({
                 type: "POST",
                 url: "/Registration/Add_User",
