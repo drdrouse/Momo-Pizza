@@ -64,7 +64,12 @@ namespace Momo_Pizza.Controllers
             using (ApplicationContext db = new ApplicationContext())
             {
                 Order delete_order = db.Orders.Where(id => id.OrderId == orderID).FirstOrDefault();
-                if (delete_order != null)
+                Pizza pizza = db.Pizzas.Where(id => id.PizzaId == delete_order.Id_Pizza).FirstOrDefault();
+                if (pizza.Name == "Пицца по твоим правилам")
+                {
+                    db.Pizzas.Remove(pizza);
+                    db.SaveChanges();
+                } else if (delete_order != null)
                 {
                     db.Orders.Remove(delete_order);
                     db.SaveChanges();
