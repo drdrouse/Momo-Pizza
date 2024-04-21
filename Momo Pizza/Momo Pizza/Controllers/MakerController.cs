@@ -11,20 +11,12 @@ namespace Momo_Pizza.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddPizza(int Price, int IdDough, int idSauce, int[] idIngredient)
+        public IActionResult AddPizza(int Price, string NameDough, string NameSauce, string[] NameIngredient)
         {
             using(ApplicationContext db = new ApplicationContext())
             {
-                Dough dough = db.Doughs.Where(id => id.DoughId == IdDough).FirstOrDefault();
-                Sauce sauce = new Sauce();
-                if (idSauce == 0)
-                {
-                    sauce = db.Sauces.Where(name => name.Name_Sauce == "Без соуса").FirstOrDefault();
-                }
-                else
-                {
-                    sauce = db.Sauces.Where(id => id.SauceId == idSauce).FirstOrDefault();
-                }
+                Dough dough = db.Doughs.Where(name => name.Name == NameDough).FirstOrDefault();
+                Sauce sauce = db.Sauces.Where(name => name.Name_Sauce == NameSauce).FirstOrDefault();
                 Pizza pizza = new Pizza()
                 {
                     Name = "Пицца по твоим правилам",
@@ -43,19 +35,19 @@ namespace Momo_Pizza.Controllers
                     db.SaveChanges();
                 }
                 AddOrder(pizza);
-                AddFilling(pizza, idIngredient);
+                AddFilling(pizza, NameIngredient);
                 return Json(true);
             }
-            return Json(false);
+
         }
 
-        public void AddFilling(Pizza pizza_created, int[] Ingredients)
+        public void AddFilling(Pizza pizza_created, string[] NameIngredient)
         {
             using (ApplicationContext db = new ApplicationContext())
             {
-                for (int i = 0; i < Ingredients.Length; i++)
+                for (int i = 0; i < NameIngredient.Length; i++)
                 {
-                    Ingredient ingredient = db.Ingredients.Where(id => id.IngredientId == Ingredients[i]).FirstOrDefault();
+                    Ingredient ingredient = db.Ingredients.Where(name => name.Name == NameIngredient[i]).FirstOrDefault();
                     Pizza pizza = db.Pizzas.Where(id => id == pizza_created).FirstOrDefault();
                     Filling filling = new Filling()
                     {

@@ -16,14 +16,21 @@ namespace Momo_Pizza.Models
         public  DbSet<Authorized> Authorizeds { get; set; } = null!;
         public  DbSet<History> Histories { get; set; } = null!;
         public  DbSet<Bought> Boughts { get; set; } = null!;
-        
 
-        
+        public ApplicationContext()
+        {
+            if (Database.EnsureCreated())
+            {
+                Database.EnsureDeleted(); // удаляем базу данных со старой схемой
+                Database.EnsureCreated(); // создаём базу данных с новой схемой
+            }
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Momo_Pizza;Trusted_Connection=True;MultipleActiveResultSets=true;");
         }
 
-
+        
     }
 }

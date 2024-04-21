@@ -33,17 +33,17 @@
                             <div class="main_item">
                                 <h3>Тесто</h3>
                                 <select id="dough">
-                                        <option value="4">Итальянское тесто</option>
-                                        <option value="6">Нью-йоркское тесто</option>
+                                        <option value="Итальянское тесто">Итальянское тесто</option>
+                                        <option value="Нью-йорское тесто">Нью-йоркское тесто</option>
                                 </select>
                             </div>
                             <div class="main_item">
                                 <h3>Соус</h3>
                                 <select id="sauce">
-                                        <option value="0"> -- Выберите соус -- </option>
-                                        <option value="8">Томатный соус</option>
-                                        <option value="3">Сырный соус</option>
-                                        <option value="4">Соус Песто</option>
+                                        <option value="Без соуса"> -- Выберите соус -- </option>
+                                        <option value="Томатный соус">Томатный соус</option>
+                                        <option value="Сырный соус">Сырный соус</option>
+                                        <option value="Соус Песто">Соус Песто</option>
                                 </select>
                             </div>
                         </div>
@@ -58,17 +58,17 @@
                                 foreach (Ingredient ing in db.Ingredients)
                                 {
                                     <li class="ingredient">
-                                        <input type="checkbox" id="@ing.IngredientId">
-                                        <label for="@ing.IngredientId">
+                                        <input type="checkbox" id="@ing.Name">
+                                        <label for="@ing.Name">
                                             <img src="~/css/Ingredients/@ing.Photo" alt="@ing.Name">                                      
                                         </label>
                                         <div class="ingredient-info">
                                             <span class="ingredient-name">@ing.Name</span>                                                                                     
                                         </div>
                                         <footer class="content">
-                                            <button id="@ing.IngredientId" class="qt-minus"><span>-</span></button>
-                                                    <span id="@ing.IngredientId" class="qt">0</span>
-                                            <button id="@ing.IngredientId" class="qt-plus"><span>+</span></button>
+                                            <button id="@ing.Name" class="qt-minus"><span>-</span></button>
+                                                    <span id="@ing.Name" class="qt">0</span>
+                                            <button id="@ing.Name" class="qt-plus"><span>+</span></button>
                                         </footer>
                                     </li>
                                 }

@@ -69,7 +69,8 @@ namespace Momo_Pizza.Controllers
                 {
                     db.Pizzas.Remove(pizza);
                     db.SaveChanges();
-                } else if (delete_order != null)
+                }
+                else if (delete_order != null)
                 {
                     db.Orders.Remove(delete_order);
                     db.SaveChanges();
