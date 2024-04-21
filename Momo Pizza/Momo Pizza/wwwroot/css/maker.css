@@ -1,4 +1,25 @@
 ﻿@import "https://fonts.googleapis.com/css?family=Merriweather";
+.first_item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.second_item {
+    display: flex;
+    flex-direction: column;
+}
+.third_item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    .third_item h2 {
+        margin-left: 40px;
+    }
 .main_item {
     padding: 20px;
     flex-direction: column;
@@ -28,7 +49,7 @@
     margin-left: auto;
     margin-right: 100px;
     align-content: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
 }
 
@@ -37,17 +58,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
-    .container h2 {
-        margin-top: 0;
-        margin-bottom: 28px;
-        display: flex;
-        justify-content: center;
-        font-size: 40px;
-        letter-spacing: .20em;
+h2 {
+    margin-top: 0;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: .20em;
 
-    }
+}
 
 /* Стили выпадающих списков */
 select {
@@ -187,7 +209,7 @@ label {
 
 .ingredient-name {
     color: #000;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: 300;
     margin: 17px 0 20px 0;
     flex-grow: 1; /* Название занимает все доступное пространство */
@@ -234,8 +256,8 @@ input[type="number"] {
     }
 
 .pizza-container {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border: 1px solid #ccc;
     position: relative;
 
@@ -243,6 +265,7 @@ input[type="number"] {
     justify-content: center;
     align-items: flex-start;
     flex-direction: row;
+    margin-left: 20px;
 }
 
 #pizza-canvas {
@@ -261,7 +284,7 @@ input[type="number"] {
 }
     .ingredient-list ul {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(5, minmax(0, 1fr));
         gap: 20px;
         list-style: none;
         padding-left: 0;
@@ -305,7 +328,7 @@ input[type="number"] {
 .qt-plus, .qt-minus {
     background: #e0ebe5;
     border: none;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 300;
     height: 100%;
     padding: 0 20px;

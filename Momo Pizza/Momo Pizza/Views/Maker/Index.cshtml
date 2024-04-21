@@ -20,71 +20,77 @@
         @{
         using (ApplicationContext db = new ApplicationContext())
         {
-            <main>              
-
-                <div class="container">
+            <main>
                     <h2>Пицца-Мэйкер</h2>
-                    <div class="pizza-container">
-                        <canvas id="pizza-canvas"></canvas>
+                <div class="container">
+                    <div class="first_item">
+                        <div class="pizza-container">
+                            <canvas id="pizza-canvas"></canvas>
                         
-                    </div>
+                        </div>
 
-                    <div class="start_ingridients">
-                        <div class="main_item">
-                            <h3>Тесто</h3>
-                            <select id="dough">
-                                    <option value="4">Итальянское тесто</option>
-                                    <option value="6">Нью-йоркское тесто</option>
-                            </select>
-                        </div>
-                        <div class="main_item">
-                            <h3>Соус</h3>
-                            <select id="sauce">
-                                    <option value="0"> -- Выберите соус -- </option>
-                                    <option value="8">Томатный соус</option>
-                                    <option value="3">Сырный соус</option>
-                                    <option value="4">Соус Песто</option>
-                            </select>
+                        <div class="start_ingridients">
+                            <div class="main_item">
+                                <h3>Тесто</h3>
+                                <select id="dough">
+                                        <option value="4">Итальянское тесто</option>
+                                        <option value="6">Нью-йоркское тесто</option>
+                                </select>
+                            </div>
+                            <div class="main_item">
+                                <h3>Соус</h3>
+                                <select id="sauce">
+                                        <option value="0"> -- Выберите соус -- </option>
+                                        <option value="8">Томатный соус</option>
+                                        <option value="3">Сырный соус</option>
+                                        <option value="4">Соус Песто</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                   
-                    <div class="ingridient_label">
-                        <h3><span>Ингредиенты</span></h3>
-                    </div>
-                    <div class="ingredient-list">
-                        <ul>
-                        @{
-                            foreach (Ingredient ing in db.Ingredients)
-                            {
-                                <li class="ingredient">
-                                    <input type="checkbox" id="@ing.IngredientId">
-                                    <label for="@ing.IngredientId">
-                                        <img src="~/css/Ingredients/@ing.Photo" alt="@ing.Name">                                      
-                                    </label>
-                                    <div class="ingredient-info">
-                                        <span class="ingredient-name">@ing.Name</span>                                                                                     
-                                    </div>
-                                    <footer class="content">
-                                        <button id="@ing.IngredientId" class="qt-minus"><span>-</span></button>
-                                                <span id="@ing.IngredientId" class="qt">0</span>
-                                        <button id="@ing.IngredientId" class="qt-plus"><span>+</span></button>
-                                    </footer>
-                                </li>
+                    <div class="second_item">
+                        <div class="ingridient_label">
+                            <h3><span>Ингредиенты</span></h3>
+                        </div>
+                        <div class="ingredient-list">
+                            <ul>
+                            @{
+                                foreach (Ingredient ing in db.Ingredients)
+                                {
+                                    <li class="ingredient">
+                                        <input type="checkbox" id="@ing.IngredientId">
+                                        <label for="@ing.IngredientId">
+                                            <img src="~/css/Ingredients/@ing.Photo" alt="@ing.Name">                                      
+                                        </label>
+                                        <div class="ingredient-info">
+                                            <span class="ingredient-name">@ing.Name</span>                                                                                     
+                                        </div>
+                                        <footer class="content">
+                                            <button id="@ing.IngredientId" class="qt-minus"><span>-</span></button>
+                                                    <span id="@ing.IngredientId" class="qt">0</span>
+                                            <button id="@ing.IngredientId" class="qt-plus"><span>+</span></button>
+                                        </footer>
+                                    </li>
+                                }
+
                             }
-
-                        }
-                        </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    
                     </div>
                     @{
+
                         <footer class="card__price__and__add">
-                            <!-- Цены на товара-->
+                            <div class="third_item">
+                                <!-- Цены на товара-->
                                 <h2 id="full-price" class="full-price">
                                     0₽
                                 </h2>
                                 <button class="add-to-cart-btn">В корзину</button>
+                            </div>
                         </footer>
                     }
-                    </div>
                 </main>
             }
         }
