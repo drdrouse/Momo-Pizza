@@ -14,6 +14,10 @@ namespace Momo_Pizza.Models
         public DbSet<Sauce> Sauces { get; set; } = null!;
 
         public  DbSet<Authorized> Authorizeds { get; set; } = null!;
+        public  DbSet<History> Histories { get; set; } = null!;
+        public  DbSet<Bought> Boughts { get; set; } = null!;
+        
+
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
