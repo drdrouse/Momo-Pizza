@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\web-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u043A\u0443\u0440\u0441\u0430\u0447\\momo pizza\\momo pizza\\views\\history\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|solutionrelative:momo pizza\\views\\history\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\web-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u043A\u0443\u0440\u0441\u0430\u0447\\momo pizza\\momo pizza\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|solutionrelative:momo pizza\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 218,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +31,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\Views\\History\\Index.cshtml",
+              "RelativeDocumentMoniker": "Momo Pizza\\Views\\History\\Index.cshtml",
+              "ToolTip": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\Views\\History\\Index.cshtml",
+              "RelativeToolTip": "Momo Pizza\\Views\\History\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T01:07:43.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HistoryController.cs",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\Controllers\\HistoryController.cs",
+              "RelativeDocumentMoniker": "Momo Pizza\\Controllers\\HistoryController.cs",
+              "ToolTip": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\Controllers\\HistoryController.cs",
+              "RelativeToolTip": "Momo Pizza\\Controllers\\HistoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T01:07:10.629Z",
+              "EditorCaption": ""
             }
           ]
         }

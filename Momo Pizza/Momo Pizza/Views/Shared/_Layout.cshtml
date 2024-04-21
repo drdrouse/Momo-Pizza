@@ -55,7 +55,7 @@
                 else
                 {
                     <div class="nickname">
-                        <a>
+                        <a href="~/History/Index" style="color: black; text-decoration: none;">
                             @db.Users.Where(name => name.UserId == db.Authorizeds.ToList().FirstOrDefault().User_id).FirstOrDefault().UserName
                         </a>
                     </div>
