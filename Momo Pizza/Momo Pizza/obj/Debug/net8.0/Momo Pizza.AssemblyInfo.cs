@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Momo Pizza")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b71fe73cecdfce69257b6e81a1133325c432e70")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20ce5cc84923029afe860e267a979a31b6ce0515")]
 [assembly: System.Reflection.AssemblyProductAttribute("Momo Pizza")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Momo Pizza")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -26,10 +26,20 @@ namespace Momo_Pizza.Controllers
                     };
                     db.Authorizeds.Add(authorized);
                     db.SaveChanges();
+                    Add_Log(user.UserName);
                     return Json(true);
                 }
             }
             return Json(false); 
+        }
+
+        private void Add_Log(string Name)
+        {
+            string path = "autorization.txt";
+            using (StreamWriter sw = new StreamWriter(path, true))
+            {
+                sw.WriteLineAsync($"Пользователь {Name} авторизировался");
+            }
         }
     }
 }
