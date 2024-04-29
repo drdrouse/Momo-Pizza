@@ -23,10 +23,12 @@ namespace Momo_Pizza.Controllers
             using (ApplicationContext db = new ApplicationContext())
             {
                 Authorized authorized = db.Authorizeds.FirstOrDefault();
+                User user = db.Users.Where(email => email.Email == authorized.Login).FirstOrDefault();
                 if (authorized != null)
                 {
                     db.Authorizeds.Remove(authorized);
                     db.SaveChanges();
+                    Add_Log(user.UserName);
                     return Json(true);
                 }
             }
@@ -41,6 +43,14 @@ namespace Momo_Pizza.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        private void Add_Log(string Name)
+        {
+            string path = "Loggin/autorization.txt";
+            using (StreamWriter sw = new StreamWriter(path, true))
+            {
+                sw.WriteLineAsync($"Пользователь '{Name}' вышел из аккаунта.");
+            }
         }
     }
 }
