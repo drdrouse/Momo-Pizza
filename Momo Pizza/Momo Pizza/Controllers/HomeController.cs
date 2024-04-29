@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Momo_Pizza.Models;
 using System.Diagnostics;
+using System.Diagnostics.Metrics;
+using System.IO;
 
 namespace Momo_Pizza.Controllers
 {
@@ -47,9 +49,24 @@ namespace Momo_Pizza.Controllers
         private void Add_Log(string Name)
         {
             string path = "Loggin/autorization.txt";
+            int count_log = 0;
+            string log;
+            StreamReader sr = new StreamReader(path, true);
+            
+            while ((log = sr.ReadLine()) != null)
+            {
+                count_log++;
+            }
+            sr.Close();
+            if (count_log >= 50)
+            {
+                FileStream fs = new FileStream(path, FileMode.Truncate);
+                fs.Close();
+            }
             using (StreamWriter sw = new StreamWriter(path, true))
             {
-                sw.WriteLineAsync($"Пользователь '{Name}' вышел из аккаунта.");
+
+                sw.WriteLineAsync($"Пользователь '{Name}' вышел из аккаунта. Дата: {DateTime.Now}");
             }
         }
     }

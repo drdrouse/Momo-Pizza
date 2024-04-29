@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\web-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u043A\u0443\u0440\u0441\u0430\u0447\\momo pizza\\momo pizza\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|solutionrelative:momo pizza\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\web-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u043A\u0443\u0440\u0441\u0430\u0447\\momo pizza\\momo pizza\\controllers\\autorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|solutionrelative:momo pizza\\controllers\\autorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,7 +17,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 218,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,36 +33,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Momo Pizza\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Momo Pizza\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAuwDMAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T04:43:42.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "dbo.Users [\u0414\u0430\u043D\u043D\u044B\u0435]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Momo_Pizza/True/SqlTable/dbo.Users.sql",
               "ToolTip": "dbo.Users [\u0414\u0430\u043D\u043D\u044B\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-04-29T04:15:41.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T04:15:41.019Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AutorizationController.cs",
               "DocumentMoniker": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\Controllers\\AutorizationController.cs",
               "RelativeDocumentMoniker": "Momo Pizza\\Controllers\\AutorizationController.cs",
               "ToolTip": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\Controllers\\AutorizationController.cs",
               "RelativeToolTip": "Momo Pizza\\Controllers\\AutorizationController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAQwBwAAAAUAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAwC8AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T03:58:45.255Z",
               "EditorCaption": ""

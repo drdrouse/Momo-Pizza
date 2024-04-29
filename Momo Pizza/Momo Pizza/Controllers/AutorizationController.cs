@@ -36,9 +36,23 @@ namespace Momo_Pizza.Controllers
         private void Add_Log(string Name)
         {
             string path = "Loggin/autorization.txt";
+            int count_log = 0;
+            string log;
+            StreamReader sr = new StreamReader(path, true);
+
+            while ((log = sr.ReadLine()) != null)
+            {
+                count_log++;
+            }
+            sr.Close();
+            if (count_log >= 50)
+            {
+                FileStream fs = new FileStream(path, FileMode.Truncate);
+                fs.Close();
+            }
             using (StreamWriter sw = new StreamWriter(path, true))
             {
-                sw.WriteLineAsync($"Пользователь '{Name}' авторизировался.");
+                sw.WriteLineAsync($"Пользователь '{Name}' авторизировался. Дата: {DateTime.Now}");
             }
         }
     }
