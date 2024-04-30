@@ -131,12 +131,7 @@ namespace Momo_Pizza.Controllers
             {
                 Order delete_order = db.Orders.Where(id => id.OrderId == orderID).FirstOrDefault();
                 Pizza pizza = db.Pizzas.Where(id => id.PizzaId == delete_order.Id_Pizza).FirstOrDefault();
-                if (pizza.Name == "Пицца по твоим правилам")
-                {
-                    db.Pizzas.Remove(pizza);
-                    db.SaveChanges();
-                }
-                else if (delete_order != null)
+                if (delete_order != null)
                 {
                     db.Orders.Remove(delete_order);
                     Add_Log("Loggin/basket.txt", $"Из корзины №{delete_order.Id_Basket}, удалена пицца " +

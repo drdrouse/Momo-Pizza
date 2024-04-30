@@ -35,7 +35,7 @@ namespace Momo_Pizza.Controllers
 
         private void Add_Log(string Name)
         {
-            string path = "Loggin/autorization.txt";
+            string path = "Loggin/user.txt";
             int count_log = 0;
             string log;
             StreamReader sr = new StreamReader(path, true);

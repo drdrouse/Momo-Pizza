@@ -30,9 +30,33 @@ namespace Momo_Pizza.Controllers
                     };
 
                     db.Orders.Add(order);
+                    
                     db.SaveChanges();
                 }
+                Add_Log("Loggin/history.txt", $"Заказ №{id_history}, добавлен в корзину. Дата: {DateTime.Now}");
                 return Json(true);
+            }
+        }
+
+        private void Add_Log(string path, string text)
+        {
+            int count_log = 0;
+            string log;
+            StreamReader sr = new StreamReader(path, true);
+
+            while ((log = sr.ReadLine()) != null)
+            {
+                count_log++;
+            }
+            sr.Close();
+            if (count_log >= 50)
+            {
+                FileStream fs = new FileStream(path, FileMode.Truncate);
+                fs.Close();
+            }
+            using (StreamWriter sw = new StreamWriter(path, true))
+            {
+                sw.WriteLineAsync(text);
             }
         }
     }

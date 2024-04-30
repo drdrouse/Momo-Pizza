@@ -9,12 +9,33 @@ namespace Momo_Pizza.Controllers
         {
             return View();
         }
+        private void Add_Log(string path, string text)
+        {
+            int count_log = 0;
+            string log;
+            StreamReader sr = new StreamReader(path, true);
 
+            while ((log = sr.ReadLine()) != null)
+            {
+                count_log++;
+            }
+            sr.Close();
+            if (count_log >= 50)
+            {
+                FileStream fs = new FileStream(path, FileMode.Truncate);
+                fs.Close();
+            }
+            using (StreamWriter sw = new StreamWriter(path, true))
+            {
+                sw.WriteLineAsync(text);
+            }
+        }
         [HttpPost]
         public IActionResult AddPizza(int Price, string NameDough, string NameSauce, string[] NameIngredient)
         {
             using(ApplicationContext db = new ApplicationContext())
             {
+                User user = db.Users.Where(id => id.UserId == db.Authorizeds.ToList().FirstOrDefault().User_id).FirstOrDefault();
                 Dough dough = db.Doughs.Where(name => name.Name == NameDough).FirstOrDefault();
                 Sauce sauce = db.Sauces.Where(name => name.Name_Sauce == NameSauce).FirstOrDefault();
                 Pizza pizza = new Pizza()
@@ -36,6 +57,7 @@ namespace Momo_Pizza.Controllers
                 }
                 AddOrder(pizza);
                 AddFilling(pizza, NameIngredient);
+                Add_Log("Loggin/maker.txt", $"Пользователь \"{user.UserName}\", создал пиццу в \"Пицца-Мейкер\"");
                 return Json(true);
             }
 
@@ -83,6 +105,7 @@ namespace Momo_Pizza.Controllers
                 {
                     db.Orders.Add(order);
                     db.SaveChanges();
+                    Add_Log("Loggin/order.txt", $"В корзину {basket.BasketId}, добавлена пицца №{pizza.PizzaId}. Дата: {DateTime.Now}");
                 }
 
             }

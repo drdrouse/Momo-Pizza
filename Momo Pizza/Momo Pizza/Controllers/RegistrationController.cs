@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Momo_Pizza.Models;
+using NuGet.ContentModel;
 
 namespace Momo_Pizza.Controllers
 {
@@ -29,6 +30,7 @@ namespace Momo_Pizza.Controllers
                     db.Users.Add(user);
                     db.SaveChanges();
                     Add_Basket(email);
+                    Add_Log("Loggin/user.txt", $"Новый пользователь под ником \"{username}\" зрегистрирован. Дата: {DateTime.Now}");
                     return Json(true);
                 }
                 
@@ -54,6 +56,28 @@ namespace Momo_Pizza.Controllers
                     db.Baskets.Add(basket);
                     db.SaveChanges();
                 }
+            }
+        }
+
+        private void Add_Log(string path, string text)
+        {
+            int count_log = 0;
+            string log;
+            StreamReader sr = new StreamReader(path, true);
+
+            while ((log = sr.ReadLine()) != null)
+            {
+                count_log++;
+            }
+            sr.Close();
+            if (count_log >= 50)
+            {
+                FileStream fs = new FileStream(path, FileMode.Truncate);
+                fs.Close();
+            }
+            using (StreamWriter sw = new StreamWriter(path, true))
+            {
+                sw.WriteLineAsync(text);
             }
         }
     }
