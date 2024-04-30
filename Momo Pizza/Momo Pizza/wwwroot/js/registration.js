@@ -6,7 +6,8 @@
     const telephone = document.getElementById("telephone");
     const password = document.getElementById("password");
     const password2 = document.getElementById("password2");
-
+    const path = 'Loggin/error.txt';
+    var now = new Date().toLocaleString();
 
     function showError(input, message) {
         const formControl = input.parentElement;
@@ -26,6 +27,14 @@
             return (true);
         } else {
             showError(input, "Никнейм имеет неверный формат");
+            $.ajax({
+                type: "POST",
+                url: "/Registration/Create_Log",
+                data: {
+                    "path": path,
+                    "text": "Ошибка ввода: Введёный никнейм не соответствует формату: " + '"' + input.value + '"' + ". Дата: " + now,
+                }
+            });
             return (false);
         }
     }
@@ -37,6 +46,14 @@
             return (true);
         } else {
             showError(input, "E-mail имеет неверный формат");
+            $.ajax({
+                type: "POST",
+                url: "/Registration/Create_Log",
+                data: {
+                    "path": path,
+                    "text": "Ошибка ввода: Введёный email не соответствует формату: " + '"' + input.value + '"' + ". Дата: " + now,
+                }
+            });
             return (false);
         }
     }
@@ -48,6 +65,14 @@
             return (true);
         } else {
             showError(input, "Телефон имеет неверный формат");
+            $.ajax({
+                type: "POST",
+                url: "/Registration/Create_Log",
+                data: {
+                    "path": path,
+                    "text": "Ошибка ввода: Введёный телефон не соответствует формату: " + '"' + input.value + '"' + ". Дата: " + now,
+                }
+            });
             return (false);
         }
     }
@@ -59,6 +84,14 @@
             return (true);
         } else {
             showError(input, "Пароль имеет неверный формат");
+            $.ajax({
+                type: "POST",
+                url: "/Registration/Create_Log",
+                data: {
+                    "path": path,
+                    "text": "Ошибка ввода: Введёный пароль не соответствует формату: " + '"' + input.value + '"' + ". Дата: " + now,
+                }
+            });
             return (false);
         }
     }
@@ -67,10 +100,18 @@
     function checkPasswordsMatch(input1, input2) {
         if (input1.value !== input2.value) {
             showError(input2, "Пароли не совпадают");
+            $.ajax({
+                type: "POST",
+                url: "/Registration/Create_Log",
+                data: {
+                    "path": path,
+                    "text": "Ошибка ввода: Пароли не совпадают. Дата: " + now,
+                }
+            });
             return (false);
         } else {
             if (input1.value !== null){
-                showSuccess(input2);
+                showSuccess(input2);                
             }
             return (true);
         }

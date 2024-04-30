@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Momo_Pizza.Models;
 using NuGet.ContentModel;
+using System.Text;
 
 namespace Momo_Pizza.Controllers
 {
@@ -39,7 +40,12 @@ namespace Momo_Pizza.Controllers
             }
             return Json(false);
         }
-
+        
+        [HttpPost]
+        public void Create_Log(string path, string text)
+        {
+            Add_Log(path, text);
+        }
         public void Add_Basket(string email)
         {
             using (ApplicationContext db = new ApplicationContext())
@@ -75,10 +81,21 @@ namespace Momo_Pizza.Controllers
                 FileStream fs = new FileStream(path, FileMode.Truncate);
                 fs.Close();
             }
-            using (StreamWriter sw = new StreamWriter(path, true))
+            while (true)
             {
-                sw.WriteLineAsync(text);
+                try
+                {
+                    StreamWriter sw = new StreamWriter(path, true);
+                    sw.WriteLineAsync(text);
+                    sw.Close();
+                    break;
+                }
+                catch
+                {
+                    Thread.Sleep(100);
+                }
             }
+            
         }
     }
 }
