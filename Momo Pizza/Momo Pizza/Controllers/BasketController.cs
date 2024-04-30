@@ -1,11 +1,33 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Momo_Pizza.Models;
 using NuGet.Configuration;
+using System.Security.Cryptography;
 
 namespace Momo_Pizza.Controllers
 {
     public class BasketController : Controller
     {
+        private void Add_Log(string path, string text)
+        {
+            int count_log = 0;
+            string log;
+            StreamReader sr = new StreamReader(path, true);
+
+            while ((log = sr.ReadLine()) != null)
+            {
+                count_log++;
+            }
+            sr.Close();
+            if (count_log >= 50)
+            {
+                FileStream fs = new FileStream(path, FileMode.Truncate);
+                fs.Close();
+            }
+            using (StreamWriter sw = new StreamWriter(path, true))
+            {
+                sw.WriteLineAsync(text);
+            }
+        }
         public IActionResult Index()
         {
             return View();
@@ -20,19 +42,19 @@ namespace Momo_Pizza.Controllers
                 CreateHistory(user);
                 foreach (Order ord in db.Orders.Where(id => id.Id_Basket == basket.BasketId))
                 {
-                    AddBoughts(user, ord);
+                    AddBoughts(ord);
                     if (ord != null)
                     {
+                        Add_Log("Loggin/basket.txt", $"Пользователь '{user.UserName}'. " +
+                            $"Оплатил заказ №{ord.OrderId}. Дата: {DateTime.Now}");
                         db.Orders.Remove(ord);
-                        db.SaveChanges();
-                        
+                        db.SaveChanges();                        
                     }
-                }
-                
+                }                
                 return Json(true);
             }
         }
-        private void AddBoughts(User user, Order ord)
+        private void AddBoughts(Order ord)
         {
             using (ApplicationContext db = new ApplicationContext())
             {
@@ -48,6 +70,8 @@ namespace Momo_Pizza.Controllers
                     Count = order.Count
                 };
                 db.Boughts.Add(bought);
+                Add_Log("Loggin/history.txt", $"В историю №{history.HistoryId}, добавлена пицца {pizza.Name}. " +
+                    $"Дата: {DateTime.Now}");
                 db.SaveChanges();
             }
         }
@@ -61,8 +85,9 @@ namespace Momo_Pizza.Controllers
                     User_ID = user_.UserId,
                     User = user_
                 };
-                db.Histories.Add(history);
+                db.Histories.Add(history);                
                 db.SaveChanges();
+
             }
         }
         [HttpPost]
@@ -75,6 +100,9 @@ namespace Momo_Pizza.Controllers
                 {
                     update_order.Count += 1;
                     db.SaveChanges();
+                    Add_Log("Loggin/basket.txt", $"В заказе №{update_order.OrderId}. " +
+                            $"Изменено количество пицц c {update_order.Count-1} => {update_order.Count}. " +
+                            $"Дата: {DateTime.Now}");
                 }
             }
         }
@@ -88,6 +116,9 @@ namespace Momo_Pizza.Controllers
                 if ((update_order != null) && (update_order.Count > 1))
                 {
                     update_order.Count -= 1;
+                    Add_Log("Loggin/basket.txt", $"В заказе №{update_order.OrderId}. " +
+                            $"Изменено количество пицц c {update_order.Count + 1} => {update_order.Count}. " +
+                            $"Дата: {DateTime.Now}");
                     db.SaveChanges();
                 }
             }
@@ -108,6 +139,8 @@ namespace Momo_Pizza.Controllers
                 else if (delete_order != null)
                 {
                     db.Orders.Remove(delete_order);
+                    Add_Log("Loggin/basket.txt", $"Из корзины №{delete_order.Id_Basket}, удалена пицца " +
+                        $"{pizza.Name}. Дата: {DateTime.Now}");
                     db.SaveChanges();
                 }
             }
