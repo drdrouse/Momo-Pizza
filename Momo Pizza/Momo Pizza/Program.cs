@@ -172,7 +172,7 @@ using (ApplicationContext db = new ApplicationContext())
         };
         dough5 = new Dough
         {
-            Name = "Нию-йорское тесто",
+            Name = "Нью-йорское тесто",
             Type_flour = "кукурузная мука",
             Calories = 354,
             Price = 99
