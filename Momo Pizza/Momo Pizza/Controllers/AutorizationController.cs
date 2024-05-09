@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Azure.Core.Serialization;
+using Microsoft.AspNetCore.Mvc;
 using Momo_Pizza.Models;
+using Newtonsoft.Json;
+using System.Text.Json;
 
 namespace Momo_Pizza.Controllers
 {
@@ -17,23 +20,20 @@ namespace Momo_Pizza.Controllers
             {
                 User user = db.Users.Where(p => p.Email == email && p.Password==password).FirstOrDefault();
                 if (user != null)
-                {
-                    Authorized authorized = new Authorized
-                    {
-                        Login = email,
-                        Password = password,
-                        User_id = user.UserId,
-                    };
-                    db.Authorizeds.Add(authorized);
-                    db.SaveChanges();
-                    Add_Log(user.UserName);
-                    return Json(true);
+                {                   
+                    return Json(user.UserId);
                 }
             }
-            return Json(false); 
+            return Json(null); 
         }
-
-        private void Add_Log(string Name)
+        public bool isAuthorize(string email, string password)
+        {
+            object check = (Login(email, password) as JsonResult)?.Value;
+            if (check != null)
+                return true;
+            else return false;
+        }
+        private void Add_Log(Guid id)
         {
             string path = "Loggin/user.txt";
             int count_log = 0;
@@ -52,8 +52,28 @@ namespace Momo_Pizza.Controllers
             }
             using (StreamWriter sw = new StreamWriter(path, true))
             {
-                sw.WriteLineAsync($"Пользователь '{Name}' авторизировался. Дата: {DateTime.Now}");
+                sw.WriteLineAsync($"Пользователь '{id}' авторизировался. Дата: {DateTime.Now}");
             }
+        }
+
+        [HttpPost]
+        public IActionResult Add_Authoruze(string email, string password, Guid id)
+        {
+            using (ApplicationContext db = new ApplicationContext())
+            {
+
+                Authorized authorized = new Authorized
+                {
+                    Login = email,
+                    Password = password,
+                    User_id = id,
+                };
+                db.Authorizeds.Add(authorized);
+                Add_Log(id);
+                db.SaveChanges();
+                return Json(true);
+            }
+            return Json(false);
         }
     }
 }

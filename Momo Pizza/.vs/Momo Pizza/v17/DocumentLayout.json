@@ -3,22 +3,13 @@
   "WorkspaceRootPath": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\web-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u043A\u0443\u0440\u0441\u0430\u0447\\momo pizza\\momo pizza\\wwwroot\\js\\maker.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|solutionrelative:momo pizza\\wwwroot\\js\\maker.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43D9D2C5-18AE-47A9-9844-F0762C262128}|Testing\\Testing.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\web-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u043A\u0443\u0440\u0441\u0430\u0447\\momo pizza\\testing\\getdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43D9D2C5-18AE-47A9-9844-F0762C262128}|Testing\\Testing.csproj|solutionrelative:testing\\getdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Momo_Pizza/True/SqlTable/dbo.Authorizeds.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Momo_Pizza/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Momo_Pizza/True/SqlTable/dbo.Doughs.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|d:\\\u0443\u0447\u0451\u0431\u0430\\\u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\web-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u043A\u0443\u0440\u0441\u0430\u0447\\momo pizza\\momo pizza\\controllers\\getdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58C1BBD9-8846-44D7-BB7E-E58D462AFC25}|Momo Pizza\\Momo Pizza.csproj|solutionrelative:momo pizza\\controllers\\getdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,57 +36,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "maker.js",
-              "DocumentMoniker": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\maker.js",
-              "RelativeDocumentMoniker": "Momo Pizza\\wwwroot\\js\\maker.js",
-              "ToolTip": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\wwwroot\\js\\maker.js",
-              "RelativeToolTip": "Momo Pizza\\wwwroot\\js\\maker.js",
-              "ViewState": "AQIAALwAAAAAAAAAAAAuwMwAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-09T01:15:02.395Z",
+              "Title": "dbo.Authorizeds [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Momo_Pizza/True/SqlTable/dbo.Authorizeds.sql",
+              "ToolTip": "dbo.Authorizeds [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-09T02:59:52.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.Users [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Momo_Pizza/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-09T00:22:00.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "dbo.Users [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Momo_Pizza/True/SqlTable/dbo.Users.sql",
-              "ToolTip": "dbo.Users [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-09T00:22:00.809Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "dbo.Doughs [\u0414\u0430\u043D\u043D\u044B\u0435]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Momo_Pizza/True/SqlTable/dbo.Doughs.sql",
               "ToolTip": "dbo.Doughs [\u0414\u0430\u043D\u043D\u044B\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-05T07:44:48.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetData.cs",
-              "DocumentMoniker": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Testing\\GetData.cs",
-              "RelativeDocumentMoniker": "Testing\\GetData.cs",
-              "ToolTip": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Testing\\GetData.cs",
-              "RelativeToolTip": "Testing\\GetData.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAWwBQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T07:36:42.525Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetDataController.cs",
-              "DocumentMoniker": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\Controllers\\GetDataController.cs",
-              "RelativeDocumentMoniker": "Momo Pizza\\Controllers\\GetDataController.cs",
-              "ToolTip": "D:\\\u0423\u0447\u0451\u0431\u0430\\\u041F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\WEB-\u0441\u0438\u0441\u0442\u0435\u043C\u044B\\\u041A\u0443\u0440\u0441\u0430\u0447\\Momo Pizza\\Momo Pizza\\Controllers\\GetDataController.cs",
-              "RelativeToolTip": "Momo Pizza\\Controllers\\GetDataController.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAAAEIAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T07:36:22.584Z"
+              "WhenOpened": "2024-05-05T07:44:48.941Z",
+              "EditorCaption": ""
             }
           ]
         }

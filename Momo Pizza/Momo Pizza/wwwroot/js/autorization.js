@@ -30,9 +30,21 @@
                 "password": password.value,
             },
             success: function (r) {
-                if (r) {
-                    showSuccess();
-                    window.location.href = '/Home/Index/';
+                if (r != null) {
+                    $.ajax({
+                        type: "POST",
+                        url: "/Autorization/Add_Authoruze",
+                        data: {
+                            "email": email.value,
+                            "password": password.value,
+                            "id": r,
+                        },
+                        success: function (r) {
+                            showSuccess();
+                            window.location.href = '/Home/Index/';
+                        }
+                    })
+                    
                 } else {
                     showError(password, "Неверно введён логин или пароль");
                 }
