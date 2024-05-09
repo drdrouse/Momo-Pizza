@@ -3,8 +3,9 @@
     margin: 0;
     padding: 0;
 }
-p{
+p {
     padding: 5px;
+    text-align: justify;
 }
 
 .main_text {
@@ -97,4 +98,17 @@ p{
         font-size: 17px;
         border-color: #9eccae;
     }
-
+.star {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+    .star img {
+        transition: 0.2s;
+    }
+        .star img:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
