@@ -198,19 +198,26 @@ for (let node of ingredientCheckboxes) {
     })
 }
 $(".qt-plus").click(function () {
-    child = $(this).parent().children(".qt");
-    if (parseInt(child.html()) < 9) {
-        child.html(parseInt(child.html()) + 1);
-        updatePriceIngridient();
+    for (let node of ingredientCheckboxes) {
+        if (node.checked) {
+            child = $(this).parent().children(".qt");
+            if (parseInt(child.html()) < 9) {
+                child.html(parseInt(child.html()) + 1);
+                updatePriceIngridient();
+            }
+        }
     }
 });
 $(".qt-minus").click(function () {
+    for (let noe of ingredientCheckboxes) {
+        if (node.checked) {
+            child = $(this).parent().children(".qt");
 
-    child = $(this).parent().children(".qt");
-
-    if (parseInt(child.html()) > 1) {
-        child.html(parseInt(child.html()) - 1);
-        updatePriceIngridient();
+            if (parseInt(child.html()) > 1) {
+                child.html(parseInt(child.html()) - 1);
+                updatePriceIngridient();
+            }
+        }
     }
 });
 
